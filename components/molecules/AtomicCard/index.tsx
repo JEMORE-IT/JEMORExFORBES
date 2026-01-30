@@ -9,6 +9,7 @@ interface AtomicCardProps {
   description: string;
   immagine?: string; // Props facoltativo
   icon?: LucideIcon; // Props facoltativo (passato come componente Lucide)
+  colorIcon?: string; // Colore personalizzato per l'icona
   className?: string;
 }
 
@@ -18,6 +19,7 @@ export function AtomicCard({
   description,
   immagine,
   icon: Icon,
+  colorIcon,
   className,
 }: AtomicCardProps) {
   return (
@@ -39,10 +41,16 @@ export function AtomicCard({
       )}
 
       <CardHeader className="space-y-2 p-6">
-        {/* 2. Logica Icona Facoltativa */}
+        {/* 2. Logica Icona Facoltativa con Standard HEX */}
         {Icon && (
           <div className="mb-2">
-            <Icon className="text-brand-neon h-6 w-6" strokeWidth={1.5} />
+            <Icon
+              size={24} // Imposta la dimensione (h-6 w-6)
+              strokeWidth={1.5}
+              // Applica il colore HEX direttamente.
+              // Se colorIcon non è passato, usa il colore di fallback (es. verde neon)
+              color={colorIcon || '#CCF80C'}
+            />
           </div>
         )}
 

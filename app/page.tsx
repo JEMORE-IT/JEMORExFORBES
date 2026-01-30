@@ -1,3 +1,4 @@
+import { Trophy } from 'lucide-react';
 import { Metadata } from 'next';
 
 import BackgroundCanvas from '@/components/atoms/BackgroundCanvas';
@@ -13,11 +14,11 @@ export default function Home() {
     <>
       <BackgroundCanvas />
 
-      <h1 className="relative mt-20 text-center text-4xl font-bold text-white">
+      <h1 className="relative mt-20 grid place-items-center text-center text-4xl font-bold text-white">
         Benvenuto in JEMORE
       </h1>
 
-      <div className="mt-10 flex flex-col items-center justify-center gap-8 px-4">
+      <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-8 px-4">
         <AtomicCard
           title="JEMORE"
           subtitle="PRIMARY"
@@ -27,6 +28,13 @@ export default function Home() {
           title="JEMORE"
           subtitle="Secondary"
           description="Un progetto di design e sviluppo per il futuro."
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
         />
       </div>
     </>
