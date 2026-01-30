@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import Hero from '@molecules/Hero';
+import BackgroundCanvas from '@/components/atoms/BackgroundCanvas';
 
 export const metadata: Metadata = {
   title: 'JEMORE ti vuole bene',
@@ -8,5 +8,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <Hero></Hero>;
+  return (
+    <>
+      <BackgroundCanvas />
+
+      <h1 className="relative mt-20 text-center text-4xl font-bold text-white">
+        Benvenuto in JEMORE
+      </h1>
+    </>
+  );
 }
