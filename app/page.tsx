@@ -1,4 +1,3 @@
-import { Trophy } from 'lucide-react';
 import { Metadata } from 'next';
 
 import BackgroundCanvas from '@/components/atoms/BackgroundCanvas';
@@ -19,24 +18,24 @@ export default function Home() {
       </h1>
 
       <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-8 px-4">
-       <AtomicCard 
-        title="Titolo Card"
-        description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
-        // PASSAGGI CHIAVE:
-        // 1. Passa una stringa, non l'oggetto icona
-        iconName="graduation-cap" 
-        // 2. Passa un HEX, non una classe
-        colorIcon="#CCF80C" 
-      />
-      <AtomicCard 
-        title="Titolo Card"
-        description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
-        // PASSAGGI CHIAVE:
-        // 1. Passa una stringa, non l'oggetto icona
-        iconName="trophy" 
-        // 2. Passa un HEX, non una classe
-        colorIcon="#bb00ff" 
-      />
+        <AtomicCard
+          title="Titolo Card"
+          description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
+          // PASSAGGI CHIAVE:
+          // 1. Passa una stringa, non l'oggetto icona
+          iconName="graduation-cap"
+          // 2. Passa un HEX, non una classe
+          colorIcon="#CCF80C"
+        />
+        <AtomicCard
+          title="Titolo Card"
+          description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
+          // PASSAGGI CHIAVE:
+          // 1. Passa una stringa, non l'oggetto icona
+          iconName="trophy"
+          // 2. Passa un HEX, non una classe
+          colorIcon="#bb00ff"
+        />
       </div>
     </>
   );
