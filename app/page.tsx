@@ -17,27 +17,82 @@ export default function Home() {
       <h1 className="relative mt-20 grid place-items-center text-center text-4xl font-bold text-white">
         Benvenuto in JEMORE
       </h1>
-
-     <CardGrid columns={3} >
-        <AtomicCard
-          title='Titolo 1'
-          description='testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo '
-          iconName='graduation-cap'
-          colorIcon='#FF00FF'
+      <div className="/* Limite massimo larghezza (Desktop) */ /* Centra il contenuto */ /* Margine dai bordi su Mobile */ /* Margine dai bordi su Desktop (molto respiro) */ /* Spazio sopra/sotto su Mobile */ /* Spazio sopra/sotto su Desktop */ mx-auto max-w-[1440px] px-[24px] py-[60px] md:px-[80px] md:py-[120px]">
+        <CardGrid columns={2} gap="small" className="px-10">
+          <AtomicCard
+            title="Titolo 1"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="graduation-cap"
+            colorIcon="#FF00FF"
           />
-           <AtomicCard
-          title='Titolo 2'
-          description='testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo '
-          iconName='clock'
-          colorIcon='#FF00FF'
+          <AtomicCard
+            title="Titolo 2"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="clock"
+            colorIcon="#eeff00f3"
           />
-           <AtomicCard
-          title='Titolo 3'
-          description='testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo '
-          iconName='trophy'
-          colorIcon='#FF00FF'
+          <AtomicCard
+            title="Titolo 3"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="trophy"
+            colorIcon="#15ff00"
           />
-      </CardGrid> 
+          <AtomicCard
+            title="Titolo 1"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="graduation-cap"
+            colorIcon="#FF00FF"
+          />
+          <AtomicCard
+            title="Titolo 2"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="clock"
+            colorIcon="#eeff00f3"
+          />
+          <AtomicCard
+            title="Titolo 3"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="trophy"
+            colorIcon="#15ff00"
+          />
+          <AtomicCard
+            title="Titolo 1"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="graduation-cap"
+            colorIcon="#FF00FF"
+          />
+          <AtomicCard
+            title="Titolo 2"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="clock"
+            colorIcon="#eeff00f3"
+          />
+          <AtomicCard
+            title="Titolo 3"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="trophy"
+            colorIcon="#15ff00"
+          />
+          <AtomicCard
+            title="Titolo 1"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="graduation-cap"
+            colorIcon="#FF00FF"
+          />
+          <AtomicCard
+            title="Titolo 2"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="clock"
+            colorIcon="#eeff00f3"
+          />
+          <AtomicCard
+            title="Titolo 3"
+            description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+            iconName="trophy"
+            colorIcon="#15ff00"
+          />
+        </CardGrid>
+      </div>
     </>
   );
 }
