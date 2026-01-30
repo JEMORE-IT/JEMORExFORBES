@@ -4,12 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 interface AtomicCardProps {
-  title: string;
-  subtitle?: string; // Per quel testo "PRIMARY" o "TYPOGRAPHY" in alto
+  title?: string; // Titolo ora facoltativo
+  subtitle?: string;
   description: string;
-  immagine?: string; // Props facoltativo
-  icon?: LucideIcon; // Props facoltativo (passato come componente Lucide)
-  colorIcon?: string; // Colore personalizzato per l'icona
+  immagine?: string;
+  icon?: LucideIcon;
+  colorIcon?: string; // Standard HEX
   className?: string;
 }
 
@@ -22,48 +22,53 @@ export function AtomicCard({
   colorIcon,
   className,
 }: AtomicCardProps) {
+  const brandColor = colorIcon || '#CCF80C';
+
   return (
     <Card
       className={cn(
-        'bg-brand-dark overflow-hidden border-zinc-800 text-white',
+        // Trasparenza con backdrop-blur per l'effetto vetro scuro
+        'bg-[#primary]/80 overflow-hidden border-zinc-800/40 text-white shadow-2xl backdrop-blur-md',
         className
       )}
     >
-      {/* 1. Logica Immagine Facoltativa */}
+      {/* 1. Immagine Facoltativa */}
       {immagine && (
-        <div className="relative aspect-video w-full overflow-hidden border-b border-zinc-800 sm:aspect-square">
+        <div className="relative aspect-video w-full overflow-hidden border-b border-zinc-800/30 sm:aspect-square">
           <img
             src={immagine}
-            alt={title}
-            className="h-full w-full object-cover opacity-80 grayscale transition-all duration-500 hover:grayscale-0"
+            alt={title || 'card image'}
+            className="h-full w-full"
           />
         </div>
       )}
 
-      <CardHeader className="space-y-2 p-6">
-        {/* 2. Logica Icona Facoltativa con Standard HEX */}
+      <CardHeader className="space-y-3 p-6">
+        {/* 2. Icona + Rettangolino Stondato (Pill) */}
         {Icon && (
-          <div className="mb-2">
-            <Icon
-              size={24} // Imposta la dimensione (h-6 w-6)
-              strokeWidth={1.5}
-              // Applica il colore HEX direttamente.
-              // Se colorIcon non è passato, usa il colore di fallback (es. verde neon)
-              color={colorIcon || '#CCF80C'}
-            />
+          <div className="flex flex-col gap-3">
+            <Icon size={24} strokeWidth={1.5} color={brandColor} />
           </div>
         )}
 
-        {/* Subtitle stile Cyberpunk */}
-        {subtitle && (
-          <span className="text-brand-neon block text-[10px] font-bold uppercase tracking-[0.3em]">
-            {subtitle}
-          </span>
-        )}
+        <div className="space-y-1">
+          {/* Subtitle */}
+          {subtitle && (
+            <span
+              className="block text-[10px] font-bold uppercase tracking-[0.3em]"
+              style={{ color: brandColor }}
+            >
+              {subtitle}
+            </span>
+          )}
 
-        <CardTitle className="text-2xl font-bold tracking-tight">
-          {title}
-        </CardTitle>
+          {/* Titolo Facoltativo */}
+          {title && (
+            <CardTitle className="text-2xl font-bold tracking-tight">
+              {title}
+            </CardTitle>
+          )}
+        </div>
       </CardHeader>
 
       <CardContent className="px-6 pb-6">

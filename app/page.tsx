@@ -36,6 +36,67 @@ export default function Home() {
           icon={Trophy}
           colorIcon="red"
         />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          title="JEMORE"
+          subtitle="Secondary"
+          description="Un progetto di design e sviluppo per il futuro."
+          icon={Trophy}
+          colorIcon="red"
+        />
+        <AtomicCard
+          subtitle="TYPOGRAPHY"
+          description="Un progetto di design e sviluppo per il futuro."
+          colorIcon="magenta"
+          immagine="images\test_card_immage.png"
+        />
+        <AtomicCard
+          subtitle="TYPOGRAPHY"
+          description="Un progetto di design e sviluppo per il futuro."
+          colorIcon="yellow"
+          immagine="images\test_card_immage.png"
+        />
       </div>
     </>
   );
