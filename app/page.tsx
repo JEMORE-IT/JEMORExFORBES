@@ -19,84 +19,24 @@ export default function Home() {
       </h1>
 
       <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-8 px-4">
-        <AtomicCard
-          title="JEMORE"
-          subtitle="PRIMARY"
-          description="Un progetto di design e sviluppo per il futuro."
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          title="JEMORE"
-          subtitle="Secondary"
-          description="Un progetto di design e sviluppo per il futuro."
-          icon={Trophy}
-          colorIcon="red"
-        />
-        <AtomicCard
-          subtitle="TYPOGRAPHY"
-          description="Un progetto di design e sviluppo per il futuro."
-          colorIcon="magenta"
-          immagine="images\test_card_immage.png"
-        />
-        <AtomicCard
-          subtitle="TYPOGRAPHY"
-          description="Un progetto di design e sviluppo per il futuro."
-          colorIcon="yellow"
-          immagine="images\test_card_immage.png"
-        />
+       <AtomicCard 
+        title="Titolo Card"
+        description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
+        // PASSAGGI CHIAVE:
+        // 1. Passa una stringa, non l'oggetto icona
+        iconName="graduation-cap" 
+        // 2. Passa un HEX, non una classe
+        colorIcon="#CCF80C" 
+      />
+      <AtomicCard 
+        title="Titolo Card"
+        description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
+        // PASSAGGI CHIAVE:
+        // 1. Passa una stringa, non l'oggetto icona
+        iconName="trophy" 
+        // 2. Passa un HEX, non una classe
+        colorIcon="#bb00ff" 
+      />
       </div>
     </>
   );
