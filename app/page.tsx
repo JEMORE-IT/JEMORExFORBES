@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 
 import BackgroundCanvas from '@/components/atoms/BackgroundCanvas';
 import { AtomicCard } from '@/components/molecules/AtomicCard';
+import { CardGrid } from '@/components/molecules/CardGrid';
 
 export const metadata: Metadata = {
   title: 'JEMORE ti vuole bene',
@@ -17,26 +18,26 @@ export default function Home() {
         Benvenuto in JEMORE
       </h1>
 
-      <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-8 px-4">
+     <CardGrid columns={3} >
         <AtomicCard
-          title="Titolo Card"
-          description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
-          // PASSAGGI CHIAVE:
-          // 1. Passa una stringa, non l'oggetto icona
-          iconName="graduation-cap"
-          // 2. Passa un HEX, non una classe
-          colorIcon="#CCF80C"
-        />
-        <AtomicCard
-          title="Titolo Card"
-          description="Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo Testo "
-          // PASSAGGI CHIAVE:
-          // 1. Passa una stringa, non l'oggetto icona
-          iconName="trophy"
-          // 2. Passa un HEX, non una classe
-          colorIcon="#bb00ff"
-        />
-      </div>
+          title='Titolo 1'
+          description='testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo '
+          iconName='graduation-cap'
+          colorIcon='#FF00FF'
+          />
+           <AtomicCard
+          title='Titolo 2'
+          description='testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo '
+          iconName='clock'
+          colorIcon='#FF00FF'
+          />
+           <AtomicCard
+          title='Titolo 3'
+          description='testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo '
+          iconName='trophy'
+          colorIcon='#FF00FF'
+          />
+      </CardGrid> 
     </>
   );
 }
