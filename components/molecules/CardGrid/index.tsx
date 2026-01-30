@@ -6,8 +6,8 @@ import CardGridProps from './index.types';
 
 export function CardGrid({
   children,
-  columns = 3,
-  gap = 'medium',
+  columns,
+  gap = 'small',
   className,
 }: CardGridProps) {
   const gridCols = {

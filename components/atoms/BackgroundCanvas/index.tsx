@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 export default function BackgroundCanvas() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-
+  const latencyFactor = 0.5;
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -29,8 +29,6 @@ export default function BackgroundCanvas() {
       // Forziamo il CSS per sicurezza
       canvas.style.width = `${width}px`;
       canvas.style.height = `${height}px`;
-
-      console.log('Canvas ridimensionato a:', width, height);
     };
 
     const draw = () => {
@@ -49,7 +47,7 @@ export default function BackgroundCanvas() {
       const y = canvas.height / 2 - (img.height / 2) * scale;
 
       // Applichiamo il parallax solo alla Y
-      const finalY = y - scrollY * 0.5;
+      const finalY = y - scrollY * latencyFactor;
 
       ctx.drawImage(img, x, finalY, img.width * scale, img.height * scale);
     };
@@ -72,9 +70,6 @@ export default function BackgroundCanvas() {
     };
 
     img.onload = () => {
-      console.log('✅ Immagine caricata!');
-      console.log('Dimensioni originali immagine:', img.width, img.height);
-      console.log('Dimensioni Canvas:', canvas.width, canvas.height);
       resizeCanvas();
       renderLoop();
     };

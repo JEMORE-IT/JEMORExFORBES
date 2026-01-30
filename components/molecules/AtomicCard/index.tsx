@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import dynamicIconImports from 'lucide-react/dynamicIconImports';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
@@ -37,7 +38,7 @@ export function AtomicCard({
         {/* Immagine Responsive: altezza variabile in base allo schermo */}
         {immagine && (
           <div className="relative aspect-video w-full overflow-hidden border-b border-zinc-800/30 md:aspect-square lg:aspect-video">
-            <img
+            <Image
               src={immagine}
               alt=""
               className="h-full w-full object-cover opacity-70"
