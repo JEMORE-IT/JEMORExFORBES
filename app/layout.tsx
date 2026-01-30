@@ -4,8 +4,6 @@ import React from 'react';
 import '../styles/globals.css';
 import { websiteConfig } from '@/website.config';
 import { ThemeProvider } from '@atoms/ThemeProvider';
-import Footer from '@molecules/Footer';
-import Header from '@organisms/Header';
 
 export const metadata: Metadata = {
   title: websiteConfig.title,
