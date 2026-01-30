@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 
 export default function BackgroundCanvas() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const latencyFactor = 0.5;
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -12,73 +12,50 @@ export default function BackgroundCanvas() {
     if (!ctx) return;
 
     const img = new Image();
-    // 1. IMPORTANTE: Il percorso deve essere relativo alla cartella public
-    img.src = '/images/bg.png'; // Sostituisci con il percorso della tua immagine
-
-    let scrollY = 0;
+    img.src = '/images/bg.png'; 
 
     const resizeCanvas = () => {
-      // Prendiamo le dimensioni effettive della finestra
       const width = window.innerWidth;
       const height = window.innerHeight;
 
-      // Settiamo le dimensioni INTERNE del canvas
       canvas.width = width;
       canvas.height = height;
-
-      // Forziamo il CSS per sicurezza
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${height}px`;
+      
+      // Riddisegniamo subito dopo il resize per evitare sfarfallii
+      draw();
     };
 
     const draw = () => {
-      if (!img.complete) return;
+      if (!img.complete || !ctx) return;
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Calcoliamo il fattore di scala per coprire tutto lo schermo
+      // Logica "Cover": calcoliamo la scala per riempire sempre il canvas
       const scale = Math.max(
         canvas.width / img.width,
         canvas.height / img.height
       );
 
-      // Calcoliamo la posizione centrata
-      const x = canvas.width / 2 - (img.width / 2) * scale;
-      const y = canvas.height / 2 - (img.height / 2) * scale;
+      // Centriamo l'immagine nel canvas
+      const x = (canvas.width / 2) - (img.width / 2) * scale;
+      const y = (canvas.height / 2) - (img.height / 2) * scale;
 
-      // Applichiamo il parallax solo alla Y
-      const finalY = y - scrollY * latencyFactor;
-
-      ctx.drawImage(img, x, finalY, img.width * scale, img.height * scale);
-    };
-
-    const renderLoop = () => {
-      draw();
-      requestAnimationFrame(renderLoop);
-    };
-
-    const handleScroll = () => {
-      scrollY = window.scrollY;
-    };
-
-    // Gestione errori immagine
-    img.onerror = () => {
-      console.error(
-        "Errore: Impossibile caricare l'immagine al percorso:",
-        img.src
-      );
+      // RIMOSSO IL PARALLAX: usiamo 'y' fisso invece di 'finalY'
+      // L'immagine rimarrà ancorata al centro del viewport
+      ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
     };
 
     img.onload = () => {
       resizeCanvas();
-      renderLoop();
     };
 
-    window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', resizeCanvas);
 
+    // Poiché l'immagine è fissa, non serve un renderLoop a 60fps (requestAnimationFrame)
+    // Basta disegnarla una volta all'onload e ad ogni resize.
+    // Questo risparmia batteria e CPU.
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', resizeCanvas);
     };
   }, []);
@@ -87,10 +64,11 @@ export default function BackgroundCanvas() {
     <>
       <canvas
         ref={canvasRef}
+        // Il -z-10 e fixed la tengono dietro a tutto
         className="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full"
       />
-      {/* Questo div scurisce lo sfondo per far risaltare il testo */}
-      <div className="pointer-events-none fixed left-0 top-0 -z-[9] h-full w-full bg-black/40" />
+      {/* Overlay scuro per migliorare la leggibilità delle card trasparenti */}
+      <div className="pointer-events-none fixed left-0 top-0 -z-[9] h-full w-full bg-black/60" />
     </>
   );
 }

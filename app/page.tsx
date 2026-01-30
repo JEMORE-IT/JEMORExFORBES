@@ -24,6 +24,7 @@ export default function Home() {
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="graduation-cap"
             colorIcon="#FF00FF"
+            immagine='/images/testImage.png'
           />
           <AtomicCard
             title="Titolo 2"
