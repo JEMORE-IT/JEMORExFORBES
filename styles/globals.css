@@ -57,10 +57,15 @@
 
   /* Applica il background solo agli elementi che lo richiedono esplicitamente, 
      non a tutti i contenitori trasparenti */
-  .bg-card { background-color: hsl(var(--card)); }
-  .bg-popover { background-color: hsl(var(--popover)); }
+  .bg-card {
+    background-color: hsl(var(--card));
+  }
+  .bg-popover {
+    background-color: hsl(var(--popover));
+  }
 
-  html, body {
+  html,
+  body {
     background: transparent !important;
     margin: 0;
     padding: 0;
@@ -72,7 +77,10 @@
   }
 
   /* Se vuoi che i testi siano leggibili sullo sfondo scuro del canvas */
-  h1, h2, h3, p {
+  h1,
+  h2,
+  h3,
+  p {
     @apply text-foreground;
     background-color: transparent !important;
   }
