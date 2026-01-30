@@ -12,7 +12,7 @@ export default function BackgroundCanvas() {
     if (!ctx) return;
 
     const img = new Image();
-    img.src = '/images/bg.png'; 
+    img.src = '/images/bg.png';
 
     const resizeCanvas = () => {
       const width = window.innerWidth;
@@ -20,7 +20,7 @@ export default function BackgroundCanvas() {
 
       canvas.width = width;
       canvas.height = height;
-      
+
       // Riddisegniamo subito dopo il resize per evitare sfarfallii
       draw();
     };
@@ -37,8 +37,8 @@ export default function BackgroundCanvas() {
       );
 
       // Centriamo l'immagine nel canvas
-      const x = (canvas.width / 2) - (img.width / 2) * scale;
-      const y = (canvas.height / 2) - (img.height / 2) * scale;
+      const x = canvas.width / 2 - (img.width / 2) * scale;
+      const y = canvas.height / 2 - (img.height / 2) * scale;
 
       // RIMOSSO IL PARALLAX: usiamo 'y' fisso invece di 'finalY'
       // L'immagine rimarrà ancorata al centro del viewport

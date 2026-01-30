@@ -19,7 +19,6 @@ export default function Home() {
       </h1>
       <div className="/* Limite massimo larghezza (Desktop) */ /* Centra il contenuto */ /* Margine dai bordi su Mobile */ /* Margine dai bordi su Desktop (molto respiro) */ /* Spazio sopra/sotto su Mobile */ /* Spazio sopra/sotto su Desktop */ mx-auto max-w-[1440px] px-[24px] py-[60px] md:px-[80px] md:py-[120px]">
         <CardGrid columns={4} gap="small" className="px-10">
-
           <AtomicCard
             title="Titolo 2"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
