@@ -30,9 +30,7 @@ export default function RootLayout({
           themes={websiteConfig.color_themes}
         >
           <div className="relative flex min-h-screen flex-col">
-            <Header />
             <main className="flex-grow">{children}</main>
-            <Footer />
           </div>
         </ThemeProvider>
       </body>
