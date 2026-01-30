@@ -38,10 +38,13 @@ export function AtomicCard({
         {/* Immagine Responsive: altezza variabile in base allo schermo */}
         {immagine && (
           <div className="relative aspect-video w-full overflow-hidden border-b border-zinc-800/30 md:aspect-square lg:aspect-video">
-            <Image
-              src={immagine}
-              alt=""
-              className="h-full w-full object-cover opacity-70"
+           <Image
+            src={immagine}
+            alt={title || "Card image"}
+            fill // Fondamentale: riempie il div 'relative'
+            className="object-cover opacity-80 transition-all duration-500 hover:opacity-100 hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority // Carica subito l'immagine per evitare sfarfallii
             />
           </div>
         )}
