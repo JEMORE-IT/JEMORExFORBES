@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import React from 'react';
 
 import '../styles/globals.css';
+import Header from '@/components/organisms/Header';
 import { websiteConfig } from '@/website.config';
 import { ThemeProvider } from '@atoms/ThemeProvider';
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           themes={websiteConfig.color_themes}
         >
           <div className="relative flex min-h-screen flex-col">
+            <Header />
             <main className="flex-grow">{children}</main>
           </div>
         </ThemeProvider>

@@ -3,10 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
+import ButtonContattaci from '@/components/atoms/ButtonContattaci';
 import { cn } from '@/lib/utils';
 import { websiteConfig } from '@/website.config';
-import ButtonContattaci from '@atoms/ButtonContattaci';
-import { ThemeSelector } from '@atoms/ThemeSelector';
 import { Button } from '@components/ui/button';
 import {
   Sheet,
@@ -70,12 +69,8 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
                 {route.text}
               </Link>
             ))}
+            <ButtonContattaci href="/" />
           </nav>
-        </div>
-
-        <div className="mt-auto flex w-full flex-row gap-8 border-t border-border/40 pb-4 pl-4 pt-4">
-          <ThemeSelector />
-          <ButtonContattaci href={'https://jemore.it/contattaci/'} />
         </div>
       </SheetContent>
     </Sheet>

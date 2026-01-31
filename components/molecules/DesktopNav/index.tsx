@@ -3,7 +3,6 @@ import { FC } from 'react';
 
 import { cn } from '@/lib/utils';
 import ButtonContattaci from '@atoms/ButtonContattaci';
-import { ThemeSelector } from '@atoms/ThemeSelector';
 import { NavProps, Route } from '@organisms/Header/index.types';
 
 const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
@@ -16,16 +15,14 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
             href={route.href}
             className={cn(
               'transition-colors hover:text-secondary',
-              route.active ? 'text-accent' : 'text-muted'
+              route.active ? 'text-accent' : 'text-white'
             )}
           >
             {route.text}
           </Link>
         ))}
-      </div>
-      <div className="flex items-center space-x-4">
-        <ThemeSelector />
-        <ButtonContattaci href="https://jemore.it/contattaci/" />
+
+        <ButtonContattaci href="/" />
       </div>
     </nav>
   );
