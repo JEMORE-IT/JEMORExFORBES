@@ -9,7 +9,7 @@ const font_variables = Object.values(fonts).map(
 );
 
 export const websiteConfig = {
-  logo_img: '/images/logo_jemore.png',
+  logo_img: '/images/logo.svg',
   menuItems: [
     { text: 'Home', href: '/' },
     { text: 'Link1', href: 'https://jemore.it/servizi-offerti/' },

@@ -30,8 +30,8 @@ const Header: FC<HeaderProps> = () => {
             <Image
               src={websiteConfig.logo_img}
               alt="Logo"
-              width={60}
-              height={60}
+              width={130}
+              height={130}
               className="item-start cursor-pointer justify-center"
             />
           </Link>
