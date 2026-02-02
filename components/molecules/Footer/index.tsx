@@ -23,16 +23,16 @@ const Footer: FC<FooterProps> = () => {
               className="h-auto w-40"
             />
           </Link>
-          <p className="mt-4 max-w-xs text-xs leading-relaxed text-zinc-500">
+          <p className="mt-4 max-w-xs text-xs leading-relaxed text-tertiary-gray">
             © 2026 Journey Event. A Forbes x Italian Universities Collaboration
           </p>
         </div>
 
         {/* Column 2: Quick Links */}
         <div className="flex flex-col items-start space-y-6 md:items-center">
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col items-center space-y-6">
             <Subtitle content="QUICK LINKS" />
-            <nav className="flex flex-col space-y-2 text-sm text-zinc-400">
+            <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
               <Link href="#" className="hover:text-white">
                 Jemore
               </Link>
@@ -51,7 +51,7 @@ const Footer: FC<FooterProps> = () => {
 
         {/* Column 3: Contacts and Privacy */}
         <div className="flex flex-col items-start space-y-6 md:items-center">
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col items-center space-y-6">
             <Subtitle content="CONTATTI" />
             <div className="flex space-x-4">
               <Link href="#" className="text-secondary-pink transition-colors hover:opacity-80">

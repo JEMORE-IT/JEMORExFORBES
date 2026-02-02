@@ -34,6 +34,7 @@ module.exports = {
         "primary-yellow": "var(--primary-yellow)",
         "secondary-pink": "var(--secondary-pink)",
         "tertiary-blue": "var(--tertiary-blue)",
+        "tertiary-gray": "var(--tertiary-gray)",
 
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
