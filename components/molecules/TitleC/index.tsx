@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import TitleProps from "./index.types";
+import Subtitle from "../../atoms/Subtitle";
 
 const TitleC: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout = "left" }) => {
   const renderContent = () => {
@@ -22,18 +23,7 @@ const TitleC: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout 
   return (
     <div style={{ textAlign: layout, display: "flex", flexDirection: "column", gap: "0.25rem", marginTop: "4rem" }}>
       {sottotitolo && (
-        <span
-          style={{
-            textTransform: "uppercase",
-            fontSize: "0.875rem", // small
-            letterSpacing: "0.2em", // tracking-widest
-            color: "var(--primary-yellow)",
-            fontWeight: "bold",
-            fontFamily: "var(--font-inter)",
-          }}
-        >
-          {sottotitolo}
-        </span>
+        <Subtitle content={sottotitolo} />
       )}
       <h2
         style={{
