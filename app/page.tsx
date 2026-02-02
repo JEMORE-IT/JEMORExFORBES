@@ -4,6 +4,7 @@ import BackgroundCanvas from '@/components/atoms/BackgroundCanvas';
 import Subtitle from '@/components/atoms/Subtitle';
 import { AtomicCard } from '@/components/molecules/AtomicCard';
 import { CardGrid } from '@/components/molecules/CardGrid';
+import Quote from '@/components/atoms/Quote';
 
 export const metadata: Metadata = {
   title: 'JEMORE ti vuole bene',
@@ -88,6 +89,12 @@ export default function Home() {
             colorIcon="var(--tertiary-blue)"
           />
         </CardGrid>
+        <Quote
+          content="The path from knowledge to experience is not a straight line — it's a journey of discovery"
+          colored="discovery"
+          color="var(--secondary-pink)"
+          layout="center"
+        />
       </div>
     </>
   );
