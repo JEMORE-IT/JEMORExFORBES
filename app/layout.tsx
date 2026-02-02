@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 import React from 'react';
 
 import '../styles/globals.css';
+import Footer from '@/components/molecules/Footer';
 import Header from '@/components/organisms/Header';
 import { websiteConfig } from '@/website.config';
 import { ThemeProvider } from '@atoms/ThemeProvider';
-import Footer from '@/components/molecules/Footer';
 
 export const metadata: Metadata = {
   title: websiteConfig.title,

@@ -1,4 +1,3 @@
 export default interface SubtitleProps {
-    content: string;
-
+  content: string;
 }

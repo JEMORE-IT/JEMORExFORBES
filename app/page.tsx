@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
 import BackgroundCanvas from '@/components/atoms/BackgroundCanvas';
+import Subtitle from '@/components/atoms/Subtitle';
 import { AtomicCard } from '@/components/molecules/AtomicCard';
 import { CardGrid } from '@/components/molecules/CardGrid';
-import Subtitle from '@/components/atoms/Subtitle';
 
 export const metadata: Metadata = {
   title: 'JEMORE ti vuole bene',
@@ -25,67 +25,67 @@ export default function Home() {
             title="Titolo 2"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="clock"
-            colorIcon="#eeff00f3"
+            colorIcon="var(--primary-yellow)"
           />
           <AtomicCard
             title="Titolo 3"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="trophy"
-            colorIcon="#15ff00"
+            colorIcon="var(--tertiary-blue)"
           />
           <AtomicCard
             title="Titolo 1"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="graduation-cap"
-            colorIcon="#FF00FF"
+            colorIcon="var(--secondary-pink)"
           />
           <AtomicCard
             title="Titolo 2"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="clock"
-            colorIcon="#eeff00f3"
+            colorIcon="var(--primary-yellow)"
           />
           <AtomicCard
             title="Titolo 3"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="trophy"
-            colorIcon="#15ff00"
+            colorIcon="var(--tertiary-blue)"
           />
           <AtomicCard
             title="Titolo 1"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="graduation-cap"
-            colorIcon="#FF00FF"
+            colorIcon="var(--secondary-pink)"
           />
           <AtomicCard
             title="Titolo 2"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="clock"
-            colorIcon="#eeff00f3"
+            colorIcon="var(--primary-yellow)"
           />
           <AtomicCard
             title="Titolo 3"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="trophy"
-            colorIcon="#15ff00"
+            colorIcon="var(--tertiary-blue)"
           />
           <AtomicCard
             title="Titolo 1"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="graduation-cap"
-            colorIcon="#FF00FF"
+            colorIcon="var(--secondary-pink)"
           />
           <AtomicCard
             title="Titolo 2"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="clock"
-            colorIcon="#eeff00f3"
+            colorIcon="var(--primary-yellow)"
           />
           <AtomicCard
             title="Titolo 3"
             description="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
             iconName="trophy"
-            colorIcon="#15ff00"
+            colorIcon="var(--tertiary-blue)"
           />
         </CardGrid>
       </div>

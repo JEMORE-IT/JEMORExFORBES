@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   :root,
   .jemore-theme-light {
     --jemore-blu-rgb: #222c7c;
@@ -20,7 +19,7 @@
     --primary-yellow: #ccf80c;
     --secondary-pink: #f133a5;
     --tertiary-blue: #2d10ca;
-    --jemore-gray: #A1A1AA;
+    --tertiary-gray: #a1a1aa;
 
     /* Shadcn UI colors */
     --background: var(--jemore-bianco-latte-hsl);

@@ -54,13 +54,22 @@ const Footer: FC<FooterProps> = () => {
           <div className="flex flex-col items-center space-y-6">
             <Subtitle content="CONTATTI" />
             <div className="flex space-x-4">
-              <Link href="#" className="text-secondary-pink transition-colors hover:opacity-80">
+              <Link
+                href="#"
+                className="text-secondary-pink transition-colors hover:opacity-80"
+              >
                 <Instagram size={24} />
               </Link>
-              <Link href="#" className="text-secondary-pink transition-colors hover:opacity-80">
+              <Link
+                href="#"
+                className="text-secondary-pink transition-colors hover:opacity-80"
+              >
                 <Linkedin size={24} />
               </Link>
-              <Link href="#" className="text-secondary-pink transition-colors hover:opacity-80">
+              <Link
+                href="#"
+                className="text-secondary-pink transition-colors hover:opacity-80"
+              >
                 <Twitter size={24} />
               </Link>
             </div>
@@ -70,7 +79,7 @@ const Footer: FC<FooterProps> = () => {
 
       {/* Privacy Policy absolute bottom right or mostly aligned */}
       <div className="container mx-auto mt-12 px-8 text-right">
-        <Link href="#" className="text-xs text-zinc-600 hover:text-white">
+        <Link href="#" className="text-xs text-tertiary-gray hover:text-white">
           Privacy policy
         </Link>
       </div>
