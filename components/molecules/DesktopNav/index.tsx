@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 import { cn } from '@/lib/utils';
-import ButtonContattaci from '@atoms/ButtonContattaci';
+import ButtonTicket from '@/components/atoms/Button';
 import { NavProps, Route } from '@organisms/Header/index.types';
 
 const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
@@ -22,7 +22,10 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
           </Link>
         ))}
 
-        <ButtonContattaci href="/" />
+        <ButtonTicket href="/"
+              fill="#CCF80C"
+              shadow="#F133A5"
+              textColor="#2D10CA" />
       </div>
     </nav>
   );
