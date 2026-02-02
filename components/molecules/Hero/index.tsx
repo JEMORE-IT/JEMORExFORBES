@@ -1,28 +1,39 @@
 import React from 'react';
+import Image from 'next/image';
 
 import HeroProps from './index.types';
+import Subtitle from '@/components/atoms/Subtitle';
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="px-4 py-20 text-center">
-      <div className="container mx-auto">
-        <h1 className="mb-6 text-5xl font-bold">Template Frontend JEMORE</h1>
-        <p className="mb-10 px-20 text-lg">
-          JEMORE è l&apos;acronimo di Junior Enterprise dell&apos;Università di
-          Modena e Reggio Emilia, una delle realtà più dinamiche nel panorama
-          italiano delle Junior Enterprise. Offriamo servizi di consulenza
-          strategica in ambito marketing e IT, supportando startup, PMI ed enti
-          pubblici con soluzioni su misura per accelerare il loro business. Nati
-          nel 2017, siamo un team di studenti universitari che mette in pratica
-          le conoscenze accademiche per fornire servizi di alta qualità,
-          contribuendo allo sviluppo del tessuto economico locale.
-        </p>
-        <a
-          href="https://jemore.it/"
-          className="inline-block rounded-full bg-[var(--blu)] px-8 py-4 text-lg font-semibold text-muted underline"
-        >
-          Scopri di più
-        </a>
+    <section className="px-4 py-10 text-center">
+      <div className="container mx-auto flex flex-col items-center">
+        <Image src="/images/Hero_image.svg" alt="Hero" width={1200} height={400} className="w-full max-w-6xl object-cover" />
+
+        <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-16 md:gap-24">
+          <div className="flex flex-col items-center gap-2">
+            <Subtitle
+              content="MODENA"
+              style={{ color: "var(--secondary-pink)" }}
+            />
+            <span className="text-sm font-light tracking-widest text-white/80">
+              44.6471°N 10.9252°E
+            </span>
+          </div>
+
+          <div className="h-10 w-px bg-white/30"></div>
+
+          <div className="flex flex-col items-center gap-2">
+            <Subtitle
+              content="REGGIO EMILIA"
+              style={{ color: "var(--primary-yellow)" }}
+            />
+            <span className="text-sm font-light tracking-widest text-white/80">
+              44.6989°N 10.6310°E
+            </span>
+          </div>
+        </div>
+
       </div>
     </section>
   );
