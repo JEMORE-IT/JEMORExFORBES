@@ -33,7 +33,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="w-[65%] border-border/40 bg-black">
-        <SheetHeader className="border-b border-border/40 pb-4 ">
+        <SheetHeader className="border-b border-border/40 pb-4">
           <SheetTitle>
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -62,16 +62,18 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
                   'rounded-md px-3 py-2 text-base font-bold transition-colors hover:text-secondary-pink',
                   route.active
                     ? 'text-secondary-pink'
-                    : 'text-white font-medium'
+                    : 'font-medium text-white'
                 )}
               >
                 {route.text}
               </Link>
             ))}
-            <ButtonTicket href="/"
+            <ButtonTicket
+              href="/"
               fill="var(--primary-yellow)"
               shadow="var(--secondary-pink)"
-              textColor="var(--tertiary-blue)" />
+              textColor="var(--tertiary-blue)"
+            />
           </nav>
         </div>
       </SheetContent>

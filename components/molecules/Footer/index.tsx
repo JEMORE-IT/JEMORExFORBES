@@ -1,124 +1,89 @@
+import { Instagram, Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
-import { FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
+import Subtitle from '@/components/atoms/Subtitle';
+import { websiteConfig } from '@/website.config';
 
 import FooterProps from './index.types';
 
 const Footer: FC<FooterProps> = () => {
-  const links1 = [
-    { text: 'Home', href: '/' },
-    { text: 'Contatti', href: 'https://jemore.it/contattaci/' },
-    { text: 'Aree', href: 'https://jemore.it/chisiamo/' },
-    { text: 'Candidati', href: 'https://jemore.it/unisciti-a-noi/' },
-  ];
-
-  const link2 = [
-    { text: 'Privacy Policy', href: '#' },
-    { text: 'Terms & Conditions', href: '#' },
-    { text: 'Cookies', href: '#' },
-    { text: 'FAQ', href: '#' },
-  ];
-
   return (
-    <>
-      <footer className="jemore-theme-variant-1 px-8 sm:px-4 md:px-32 md:py-8">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-4">
-            {/* Logo */}
-            <div className="flex justify-center md:justify-start">
-              <div className="flex flex-col items-center">
-                <div className="relative h-20 w-20">
-                  <Link href="/">
-                    <Image
-                      src="/images/bianco_verticale_scritta.png"
-                      alt="Logo"
-                      fill
-                      style={{ objectFit: 'contain' }}
-                      className="rounded-full"
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
+    <footer className="w-full bg-black py-10 text-white">
+      <div className="container mx-auto grid grid-cols-1 gap-12 px-8 md:grid-cols-3 md:gap-8">
+        {/* Column 1: Logo and Copyright */}
+        <div className="flex flex-col space-y-4">
+          <Link href="/">
+            <Image
+              src={websiteConfig.logo_img}
+              alt="Journey Logo"
+              width={150}
+              height={150}
+              className="h-auto w-40"
+            />
+          </Link>
+          <p className="mt-4 max-w-xs text-xs leading-relaxed text-tertiary-gray">
+            © 2026 Journey Event. A Forbes x Italian Universities Collaboration
+          </p>
+        </div>
 
-            {/* Navigation Links */}
-            <div className="space-y-1">
-              {links1.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  className="block text-xs hover:text-primary-foreground"
-                >
-                  {link.text}
-                </Link>
-              ))}
-            </div>
-            <div className="space-y-1">
-              {link2.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.href}
-                  className="block text-xs hover:text-primary-foreground"
-                >
-                  {link.text}
-                </Link>
-              ))}
-            </div>
-
-            {/* Right Logo */}
-            <div className="flex justify-center md:justify-end">
-              <div className="rounded p-2">
-                <Link href="https://jeitaly.org/">
-                  <Image
-                    src="/images/JE_Italy_Logo_Bianco.png"
-                    alt="Logo"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-              </div>
-            </div>
+        {/* Column 2: Quick Links */}
+        <div className="flex flex-col items-start space-y-6 md:items-center">
+          <div className="flex flex-col items-center space-y-6">
+            <Subtitle content="QUICK LINKS" />
+            <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
+              <Link href="#" className="hover:text-white">
+                Jemore
+              </Link>
+              <Link href="#" className="hover:text-white">
+                Forbes
+              </Link>
+              <Link href="#" className="hover:text-white">
+                ODG
+              </Link>
+              <Link href="#" className="hover:text-white">
+                info
+              </Link>
+            </nav>
           </div>
+        </div>
 
-          {/* Divider */}
-          <hr className="mt-8" />
-
-          {/* Bottom Section */}
-          <div className="mt-2 flex flex-col items-center justify-between gap-4 md:flex-row">
-            <div className="text-xs">©2024 Powered by Jemore</div>
-
-            <div className="text-center text-xs">
-              Contattaci, siamo sempre aperti a nuove proposte e collaborazioni.
-            </div>
-
+        {/* Column 3: Contacts and Privacy */}
+        <div className="flex flex-col items-start space-y-6 md:items-center">
+          <div className="flex flex-col items-center space-y-6">
+            <Subtitle content="CONTATTI" />
             <div className="flex space-x-4">
               <Link
-                href="https://www.instagram.com/jemore_consulting/"
-                className="rounded-full p-2 hover:bg-primary hover:text-primary-foreground"
+                href="#"
+                className="text-secondary-pink transition-colors hover:opacity-80"
               >
-                {FaInstagram({})}
-                <span className="sr-only">Instagram</span>
+                <Instagram size={24} />
               </Link>
               <Link
-                href="https://www.linkedin.com/company/jemore/posts/?feedView=all"
-                className="rounded-full p-2 hover:bg-primary hover:text-primary-foreground"
+                href="#"
+                className="text-secondary-pink transition-colors hover:opacity-80"
               >
-                {FaLinkedin({})}
-                <span className="sr-only">LinkedIn</span>
+                <Linkedin size={24} />
               </Link>
               <Link
-                href="https://jemore.it/contattaci/"
-                className="rounded-full p-2 hover:bg-primary hover:text-muted-foreground"
+                href="#"
+                className="text-secondary-pink transition-colors hover:opacity-80"
               >
-                {FaEnvelope({})}
-                <span className="sr-only">Email</span>
+                <Twitter size={24} />
               </Link>
             </div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+
+      {/* Privacy Policy absolute bottom right or mostly aligned */}
+      <div className="container mx-auto mt-12 px-8 text-right">
+        <Link href="#" className="text-xs text-tertiary-gray hover:text-white">
+          Privacy policy
+        </Link>
+      </div>
+    </footer>
   );
 };
 

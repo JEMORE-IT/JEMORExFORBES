@@ -31,13 +31,13 @@ export function AtomicCard({
     >
       <Card
         className={cn(
-          'flex h-full flex-col overflow-hidden border-zinc-800/40 bg-[#0a0a0a]/60 text-white shadow-2xl backdrop-blur-md',
+          'flex h-full flex-col overflow-hidden border-none bg-black/20 text-white shadow-2xl backdrop-blur-md',
           className
         )}
       >
         {/* Immagine Responsive: altezza variabile in base allo schermo */}
         {immagine && (
-          <div className="relative aspect-video w-full overflow-hidden border-b border-zinc-800/30 md:aspect-square lg:aspect-video">
+          <div className="relative aspect-video w-full overflow-hidden md:aspect-square lg:aspect-video">
             <Image
               src={immagine}
               alt={title || 'Card image'}
@@ -84,7 +84,7 @@ export function AtomicCard({
         </CardHeader>
 
         <CardContent className="flex-grow px-4 pb-4 md:px-6 md:pb-6">
-          <p className="text-xs leading-relaxed text-zinc-400 md:text-sm">
+          <p className="text-xs leading-relaxed text-tertiary-gray md:text-sm">
             {description}
           </p>
         </CardContent>

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { FC } from 'react';
 
-import { cn } from '@/lib/utils';
 import ButtonTicket from '@/components/atoms/Button';
+import { cn } from '@/lib/utils';
 import { NavProps, Route } from '@organisms/Header/index.types';
 
 const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
@@ -22,10 +22,12 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
           </Link>
         ))}
 
-        <ButtonTicket href="/"
+        <ButtonTicket
+          href="/"
           fill="var(--primary-yellow)"
           shadow="var(--secondary-pink)"
-          textColor="var(--tertiary-blue)" />
+          textColor="var(--tertiary-blue)"
+        />
       </div>
     </nav>
   );

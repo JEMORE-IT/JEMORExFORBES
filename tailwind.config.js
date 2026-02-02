@@ -34,6 +34,7 @@ module.exports = {
         "primary-yellow": "var(--primary-yellow)",
         "secondary-pink": "var(--secondary-pink)",
         "tertiary-blue": "var(--tertiary-blue)",
+        "tertiary-gray": "var(--tertiary-gray)",
 
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -111,6 +112,7 @@ module.exports = {
         opensans: ['var(--font-opensans)', 'system-ui'],
         poppins: ['var(--font-poppins)', 'system-ui'],
         lato: ['var(--font-lato)', 'system-ui'],
+        inter: ['var(--font-inter)', 'system-ui'],
         nunito: ['var(--font-nunito)', 'system-ui'],
         raleway: ['var(--font-raleway)', 'system-ui'],
       },
