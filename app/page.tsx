@@ -5,6 +5,7 @@ import Subtitle from '@/components/atoms/Subtitle';
 import { AtomicCard } from '@/components/molecules/AtomicCard';
 import { CardGrid } from '@/components/molecules/CardGrid';
 import Quote from '@/components/atoms/Quote';
+import TitleC from '@/components/molecules/TitleC';
 
 export const metadata: Metadata = {
   title: 'JEMORE ti vuole bene',
@@ -16,10 +17,9 @@ export default function Home() {
     <>
       <BackgroundCanvas />
 
-      <h1 className="relative mt-20 grid place-items-center text-center text-4xl font-bold text-white">
+      <TitleC sottotitolo="ti diamo il" colored="JEMORE" color="var(--secondary-pink)" layout="center">
         Benvenuto in JEMORE
-      </h1>
-      <Subtitle content="Benvenuto in JEMORE" />
+      </TitleC>
       <div className="/* Limite massimo larghezza (Desktop) */ /* Centra il contenuto */ /* Margine dai bordi su Mobile */ /* Margine dai bordi su Desktop (molto respiro) */ /* Spazio sopra/sotto su Mobile */ /* Spazio sopra/sotto su Desktop */ mx-auto max-w-[1440px] px-[24px] py-[60px] md:px-[80px] md:py-[120px]">
         <CardGrid columns={4} gap="small" className="px-10">
           <AtomicCard

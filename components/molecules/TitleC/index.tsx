@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import TitleProps from "./index.types";
 
-const Title: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout = "left" }) => {
+const TitleC: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout = "left" }) => {
   const renderContent = () => {
     if (!colored || !color || !children.includes(colored)) {
       return children;
@@ -20,7 +20,7 @@ const Title: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout =
   };
 
   return (
-    <div style={{ textAlign: layout, display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+    <div style={{ textAlign: layout, display: "flex", flexDirection: "column", gap: "0.25rem", marginTop: "4rem" }}>
       {sottotitolo && (
         <span
           style={{
@@ -38,7 +38,7 @@ const Title: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout =
       <h2
         style={{
           fontSize: "3rem", // 4xl/5xl equivalent
-          fontWeight: "bold",
+          fontWeight: "500",
           lineHeight: 1.1,
           fontFamily: "var(--font-inter)",
           color: "white", // Assuming dark background as per screenshot
@@ -51,4 +51,4 @@ const Title: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout =
   );
 };
 
-export default Title;
+export default TitleC;
