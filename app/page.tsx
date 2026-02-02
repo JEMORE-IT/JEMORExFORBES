@@ -91,9 +91,8 @@ export default function Home() {
         </CardGrid>
         <Quote
           content="The path from knowledge to experience is not a straight line — it's a journey of discovery"
-          colored="discovery"
           color="var(--secondary-pink)"
-          layout="center"
+          layout="right"
         />
       </div>
     </>
