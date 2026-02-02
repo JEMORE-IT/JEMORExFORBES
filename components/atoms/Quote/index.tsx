@@ -26,7 +26,8 @@ const Quote: FC<QuoteProps> = ({ content, colored, color, layout = "left" }) => 
       fontFamily: "var(--font-inter)",
       fontSize: "1.5rem",
       fontWeight: "200",
-      fontStyle: "italic"
+      fontStyle: "italic",
+      whiteSpace: "pre-line"
     }}>
       "{renderContent()}"
     </p>

@@ -3,11 +3,12 @@ import Image from 'next/image';
 
 import HeroProps from './index.types';
 import Subtitle from '@/components/atoms/Subtitle';
+import Quote from '@/components/atoms/Quote';
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="px-4 py-10 text-center">
-      <div className="container mx-auto flex flex-col items-center">
+    <section className="px-4 py-10 text-center mb-20">
+      <div className="container mx-auto flex flex-col items-center mb-40">
         <Image src="/images/Hero_image.svg" alt="Hero" width={1200} height={400} className="w-full max-w-6xl object-cover" />
 
         <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-16 md:gap-24">
@@ -34,7 +35,16 @@ const Hero: React.FC<HeroProps> = () => {
           </div>
         </div>
 
+
+
+
       </div>
+
+      <Quote
+        content={`Where knowledge meets experience. A Forbes collaboration with JEMORE.`}
+        layout="center"
+      />
+
     </section>
   );
 };
