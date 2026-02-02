@@ -1,5 +1,6 @@
 import { NextFontWithVariable } from 'next/dist/compiled/@next/font';
 import {
+  Inter,
   Lato,
   Merriweather,
   Nunito,
@@ -11,6 +12,12 @@ import {
 // This file defines the fonts used in the application, allowing for easy import and use across components. -> scalable
 // To add a new font, import it from 'next/font/google' create a new constant with the desired configuration, and ADD it to the `fonts` object.
 // do not forget to modify tailwind.config.js to include the new font variable in the `fontFamily` section.
+
+const inter: NextFontWithVariable = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 const merriweather: NextFontWithVariable = Merriweather({
   subsets: ['latin'],
@@ -55,6 +62,7 @@ const nunito: NextFontWithVariable = Nunito({
 });
 
 export const fonts = {
+  inter,
   merriweather,
   opensans,
   poppins,

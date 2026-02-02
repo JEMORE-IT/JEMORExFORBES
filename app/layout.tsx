@@ -5,6 +5,7 @@ import '../styles/globals.css';
 import Header from '@/components/organisms/Header';
 import { websiteConfig } from '@/website.config';
 import { ThemeProvider } from '@atoms/ThemeProvider';
+import Footer from '@/components/molecules/Footer';
 
 export const metadata: Metadata = {
   title: websiteConfig.title,
@@ -31,6 +32,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <Header />
             <main className="flex-grow">{children}</main>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

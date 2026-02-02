@@ -111,6 +111,7 @@ module.exports = {
         opensans: ['var(--font-opensans)', 'system-ui'],
         poppins: ['var(--font-poppins)', 'system-ui'],
         lato: ['var(--font-lato)', 'system-ui'],
+        inter: ['var(--font-inter)', 'system-ui'],
         nunito: ['var(--font-nunito)', 'system-ui'],
         raleway: ['var(--font-raleway)', 'system-ui'],
       },

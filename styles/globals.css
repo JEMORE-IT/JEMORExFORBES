@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   :root,
   .jemore-theme-light {
     --jemore-blu-rgb: #222c7c;
@@ -42,7 +43,7 @@
     --ring: 0 0% 3.9%;
     --radius: 0.5rem;
 
-    @apply font-opensans;
+    @apply font-inter;
   }
 
   /* ... (mantenuti i tuoi temi dark e varianti) ... */
@@ -56,7 +57,8 @@
   /* FIX CRITICO: Rimosso l'asterisco (*) che dava background a tutto */
   body {
     @apply text-foreground;
-    background-color: transparent; /* Permette di vedere il canvas */
+    background-color: transparent;
+    /* Permette di vedere il canvas */
   }
 
   /* Applica il background solo agli elementi che lo richiedono esplicitamente, 
@@ -64,6 +66,7 @@
   .bg-card {
     background-color: hsl(var(--card));
   }
+
   .bg-popover {
     background-color: hsl(var(--popover));
   }
