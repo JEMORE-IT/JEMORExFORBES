@@ -19,7 +19,7 @@ export function AtomicCard({
   colorIcon,
   className,
 }: AtomicCardProps) {
-  const brandColor = colorIcon || '#CCF80C';
+  const brandColor = colorIcon || 'var(--primary-yellow)';
   const Icon = iconName ? dynamic(dynamicIconImports[iconName]) : null;
 
   return (

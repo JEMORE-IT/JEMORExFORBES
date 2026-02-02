@@ -3,10 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
+import ButtonTicket from '@/components/atoms/Button';
 import { cn } from '@/lib/utils';
 import { websiteConfig } from '@/website.config';
-import ButtonContattaci from '@atoms/ButtonContattaci';
-import { ThemeSelector } from '@atoms/ThemeSelector';
 import { Button } from '@components/ui/button';
 import {
   Sheet,
@@ -29,22 +28,21 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
           size="icon"
           className="hover:bg-background md:hidden"
         >
-          <Menu className="h-8 w-8" />
+          <Menu className="h-8 w-8 text-primary-yellow" />
           <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[65%] border-border/40">
-        <SheetHeader className="border-b border-border/40 pb-4">
+      <SheetContent side="right" className="w-[65%] border-border/40 bg-black">
+        <SheetHeader className="border-b border-border/40 pb-4 ">
           <SheetTitle>
             <Link href="/" className="flex items-center gap-2">
               <Image
                 src={websiteConfig.logo_img}
                 alt="Logo"
-                width={40}
-                height={40}
-                className="h-8 w-auto"
+                width={60}
+                height={60}
+                className="h-16 w-auto"
               />
-              {websiteConfig.title}
             </Link>
           </SheetTitle>
         </SheetHeader>
@@ -54,28 +52,27 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
         </SheetDescription>
 
         <div className="my-6 px-1">
-          <nav className="flex flex-col space-y-3">
+          <nav className="flex flex-col space-y-5">
             {routes.map((route) => (
               <Link
-                key={route.href}
+                key={route.text}
                 href={route.href}
                 onClick={() => setOpen(false)}
                 className={cn(
-                  'rounded-md px-3 py-2 text-base font-bold transition-colors hover:bg-primary/50 hover:text-primary-foreground',
+                  'rounded-md px-3 py-2 text-base font-bold transition-colors hover:text-secondary-pink',
                   route.active
-                    ? 'bg-secondary text-secondary-foreground'
-                    : 'text-muted'
+                    ? 'text-secondary-pink'
+                    : 'text-white font-medium'
                 )}
               >
                 {route.text}
               </Link>
             ))}
+            <ButtonTicket href="/"
+              fill="var(--primary-yellow)"
+              shadow="var(--secondary-pink)"
+              textColor="var(--tertiary-blue)" />
           </nav>
-        </div>
-
-        <div className="mt-auto flex w-full flex-row gap-8 border-t border-border/40 pb-4 pl-4 pt-4">
-          <ThemeSelector />
-          <ButtonContattaci href={'https://jemore.it/contattaci/'} />
         </div>
       </SheetContent>
     </Sheet>

@@ -31,6 +31,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        "primary-yellow": "var(--primary-yellow)",
+        "secondary-pink": "var(--secondary-pink)",
+        "tertiary-blue": "var(--tertiary-blue)",
+
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

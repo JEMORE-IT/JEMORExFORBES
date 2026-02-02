@@ -24,22 +24,25 @@ const Header: FC<HeaderProps> = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-50 shadow-sm shadow-border/40">
-        <div className="container mx-auto flex h-16 max-w-4xl items-center justify-between px-4 py-6">
+      <header className="sticky top-0 z-50 bg-black shadow-sm">
+        <div className="container mx-auto flex h-20 items-center justify-between px-8 py-6">
           <Link href="/public" className="flex items-center space-x-2">
             <Image
               src={websiteConfig.logo_img}
               alt="Logo"
-              width={60}
-              height={60}
+              width={150}
+              height={150}
               className="item-start cursor-pointer justify-center"
             />
           </Link>
-          {isMobile ? (
-            <MobileNav routes={routes} />
-          ) : (
-            <DesktopNav routes={routes} />
-          )}
+
+          <div>
+            {isMobile ? (
+              <MobileNav routes={routes} />
+            ) : (
+              <DesktopNav routes={routes} />
+            )}
+          </div>
         </div>
       </header>
     </>

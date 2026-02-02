@@ -2,8 +2,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 import { cn } from '@/lib/utils';
-import ButtonContattaci from '@atoms/ButtonContattaci';
-import { ThemeSelector } from '@atoms/ThemeSelector';
+import ButtonTicket from '@/components/atoms/Button';
 import { NavProps, Route } from '@organisms/Header/index.types';
 
 const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
@@ -12,20 +11,21 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
       <div className="flex items-center space-x-8">
         {routes.map((route: Route) => (
           <Link
-            key={route.href}
+            key={route.text}
             href={route.href}
             className={cn(
-              'transition-colors hover:text-secondary',
-              route.active ? 'text-accent' : 'text-muted'
+              'transition-colors hover:text-secondary-pink',
+              route.active ? 'text-secondary-pink' : 'text-white'
             )}
           >
             {route.text}
           </Link>
         ))}
-      </div>
-      <div className="flex items-center space-x-4">
-        <ThemeSelector />
-        <ButtonContattaci href="https://jemore.it/contattaci/" />
+
+        <ButtonTicket href="/"
+          fill="var(--primary-yellow)"
+          shadow="var(--secondary-pink)"
+          textColor="var(--tertiary-blue)" />
       </div>
     </nav>
   );
