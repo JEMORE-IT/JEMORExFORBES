@@ -1,7 +1,13 @@
-import React, { FC } from "react";
-import QuoteProps from "./index.types";
+import React, { FC } from 'react';
 
-const Quote: FC<QuoteProps> = ({ content, colored, color, layout = "left" }) => {
+import QuoteProps from './index.types';
+
+const Quote: FC<QuoteProps> = ({
+  content,
+  colored,
+  color,
+  layout = 'left',
+}) => {
   const renderContent = () => {
     if (!colored || !color || !content.includes(colored)) {
       return content;
@@ -20,16 +26,18 @@ const Quote: FC<QuoteProps> = ({ content, colored, color, layout = "left" }) => 
   };
 
   return (
-    <p style={{
-      textAlign: layout,
-      color: "var(--tertiary-gray)",
-      fontFamily: "var(--font-inter)",
-      fontSize: "1.5rem",
-      fontWeight: "200",
-      fontStyle: "italic",
-      whiteSpace: "pre-line"
-    }}>
-      "{renderContent()}"
+    <p
+      style={{
+        textAlign: layout,
+        color: 'var(--tertiary-gray)',
+        fontFamily: 'var(--font-inter)',
+        fontSize: '1.5rem',
+        fontWeight: '200',
+        fontStyle: 'italic',
+        whiteSpace: 'pre-line',
+      }}
+    >
+      &ldquo;{renderContent()}&rdquo;
     </p>
   );
 };

@@ -1,8 +1,16 @@
-import React, { FC } from "react";
-import TitleProps from "./index.types";
-import Subtitle from "../../atoms/Subtitle";
+import React, { FC } from 'react';
 
-const TitleC: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout = "left" }) => {
+import Subtitle from '../../atoms/Subtitle';
+
+import TitleProps from './index.types';
+
+const TitleC: FC<TitleProps> = ({
+  children,
+  sottotitolo,
+  colored,
+  color,
+  layout = 'left',
+}) => {
   const renderContent = () => {
     if (!colored || !color || !children.includes(colored)) {
       return children;
@@ -21,17 +29,23 @@ const TitleC: FC<TitleProps> = ({ children, sottotitolo, colored, color, layout 
   };
 
   return (
-    <div style={{ textAlign: layout, display: "flex", flexDirection: "column", gap: "0.25rem", marginTop: "4rem" }}>
-      {sottotitolo && (
-        <Subtitle content={sottotitolo} />
-      )}
+    <div
+      style={{
+        textAlign: layout,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.25rem',
+        marginTop: '4rem',
+      }}
+    >
+      {sottotitolo && <Subtitle content={sottotitolo} />}
       <h2
         style={{
-          fontSize: "3rem", // 4xl/5xl equivalent
-          fontWeight: "500",
+          fontSize: '3rem', // 4xl/5xl equivalent
+          fontWeight: '500',
           lineHeight: 1.1,
-          fontFamily: "var(--font-inter)",
-          color: "white", // Assuming dark background as per screenshot
+          fontFamily: 'var(--font-inter)',
+          color: 'white', // Assuming dark background as per screenshot
           margin: 0,
         }}
       >
