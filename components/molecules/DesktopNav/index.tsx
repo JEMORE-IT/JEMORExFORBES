@@ -11,7 +11,7 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
       <div className="flex items-center space-x-8">
         {routes.map((route: Route) => (
           <Link
-            key={route.href}
+            key={route.text}
             href={route.href}
             className={cn(
               'transition-colors hover:text-secondary',
@@ -23,9 +23,9 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
         ))}
 
         <ButtonTicket href="/"
-              fill="#CCF80C"
-              shadow="#F133A5"
-              textColor="#2D10CA" />
+          fill="#CCF80C"
+          shadow="#F133A5"
+          textColor="#2D10CA" />
       </div>
     </nav>
   );

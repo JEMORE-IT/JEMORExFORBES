@@ -32,7 +32,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
           <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="w-[65%] border-border/40 bg-black">  
+      <SheetContent side="right" className="w-[65%] border-border/40 bg-black">
         <SheetHeader className="border-b border-border/40 pb-4 ">
           <SheetTitle>
             <Link href="/" className="flex items-center gap-2">
@@ -42,7 +42,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
                 width={60}
                 height={60}
                 className="h-16 w-auto"
-              />  
+              />
             </Link>
           </SheetTitle>
         </SheetHeader>
@@ -55,7 +55,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
           <nav className="flex flex-col space-y-5">
             {routes.map((route) => (
               <Link
-                key={route.href}
+                key={route.text}
                 href={route.href}
                 onClick={() => setOpen(false)}
                 className={cn(
