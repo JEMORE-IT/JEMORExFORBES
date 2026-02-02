@@ -28,7 +28,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
           size="icon"
           className="hover:bg-background md:hidden"
         >
-          <Menu className="h-8 w-8 text-[#CCF80C]" />
+          <Menu className="h-8 w-8 text-primary-yellow" />
           <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
@@ -59,9 +59,9 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
                 href={route.href}
                 onClick={() => setOpen(false)}
                 className={cn(
-                  'rounded-md px-3 py-2 text-base font-bold transition-colors hover:bg-second/50 hover:accent',
+                  'rounded-md px-3 py-2 text-base font-bold transition-colors hover:text-secondary-pink',
                   route.active
-                    ? 'bg-second text-accent'
+                    ? 'text-secondary-pink'
                     : 'text-white font-medium'
                 )}
               >
@@ -69,9 +69,9 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
               </Link>
             ))}
             <ButtonTicket href="/"
-              fill="#CCF80C"
-              shadow="#F133A5"
-              textColor="#2D10CA" />
+              fill="var(--primary-yellow)"
+              shadow="var(--secondary-pink)"
+              textColor="var(--tertiary-blue)" />
           </nav>
         </div>
       </SheetContent>

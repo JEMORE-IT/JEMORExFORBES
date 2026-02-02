@@ -14,8 +14,8 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
             key={route.text}
             href={route.href}
             className={cn(
-              'transition-colors hover:text-secondary',
-              route.active ? 'text-accent' : 'text-white'
+              'transition-colors hover:text-secondary-pink',
+              route.active ? 'text-secondary-pink' : 'text-white'
             )}
           >
             {route.text}
@@ -23,9 +23,9 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
         ))}
 
         <ButtonTicket href="/"
-          fill="#CCF80C"
-          shadow="#F133A5"
-          textColor="#2D10CA" />
+          fill="var(--primary-yellow)"
+          shadow="var(--secondary-pink)"
+          textColor="var(--tertiary-blue)" />
       </div>
     </nav>
   );

@@ -31,9 +31,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        prime: "var(--prime)",
-          second: "var(--second)",
-          accent: "var(--accent)",
+        "primary-yellow": "var(--primary-yellow)",
+        "secondary-pink": "var(--secondary-pink)",
+        "tertiary-blue": "var(--tertiary-blue)",
 
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

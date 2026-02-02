@@ -16,9 +16,9 @@
     --jemore-giallo-rgb: #ffd404;
     --jemore-giallo-hsl: 49.721 100% 51%;
 
-    --prime: #F133A5;
-    --second: #2D10CA;
-    --accent: #CCF80C;
+    --primary-yellow: #CCF80C;
+    --secondary-pink: #F133A5;
+    --tertiary-blue: #2D10CA;
 
     /* Shadcn UI colors */
     --background: var(--jemore-bianco-latte-hsl);
