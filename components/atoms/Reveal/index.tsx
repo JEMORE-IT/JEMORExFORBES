@@ -5,10 +5,16 @@ import { useEffect, useRef } from 'react';
 
 import RevealProps from './index.types';
 
+const DELAY = 0.25;
+const DIRECTION_UP = 75;
+const DIRECTION_DOWN = 75;
+const DIRECTION_LEFT = -75;
+const DIRECTION_RIGHT = -75;
+
 export const Reveal = ({
   children,
   width = 'fit-content',
-  delay = 0.25, // Default delay
+  delay = DELAY, // Default delay
   direction = 'up',
   className = '',
   overflow = 'hidden',
@@ -27,8 +33,18 @@ export const Reveal = ({
   const variants = {
     hidden: {
       opacity: 0,
-      y: direction === 'up' ? 75 : direction === 'down' ? -75 : 0,
-      x: direction === 'left' ? 75 : direction === 'right' ? -75 : 0,
+      y:
+        direction === 'up'
+          ? DIRECTION_UP
+          : direction === 'down'
+            ? DIRECTION_DOWN
+            : 0,
+      x:
+        direction === 'left'
+          ? DIRECTION_LEFT
+          : direction === 'right'
+            ? DIRECTION_RIGHT
+            : 0,
     },
     visible: {
       opacity: 1,
