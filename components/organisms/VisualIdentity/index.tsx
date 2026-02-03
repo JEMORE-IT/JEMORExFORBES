@@ -59,9 +59,6 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             ]}
           </CardGrid>
 
-
-
-
         </div>
 
       </div>
