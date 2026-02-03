@@ -12,13 +12,15 @@ const Hero: React.FC<HeroProps> = () => {
     <section className="mb-20 px-4 py-10 text-center">
       <div className="container mx-auto mb-40 flex flex-col items-center">
         <Reveal width="fit-content">
-          <Image
-            src="/images/Hero_image.svg"
-            alt="Hero"
-            width={1200}
-            height={400}
-            className="w-full max-w-6xl object-cover"
-          />
+          <div className="relative h-[60vh] w-full max-w-6xl md:h-[400px]">
+            <Image
+              src="/images/Hero_image.svg"
+              alt="Hero"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </Reveal>
 
         <Reveal width="fit-content" delay={0.4}>
