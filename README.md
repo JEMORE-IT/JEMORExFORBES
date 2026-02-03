@@ -217,6 +217,131 @@ Ecco una spiegazione delle regole personalizzate o particolarmente rilevanti nel
 
 ---
 
+
+## **Design System & Components**
+
+Questa sezione esplora i componenti principali del design system, spiegando **cosa fanno** e **come lo fanno**.
+
+### **Atoms**
+
+#### **1. Subtitle** (`@components/atoms/Subtitle`)
+- **Cosa fa**: Renderizza un sottotitolo stile "etichetta" (es. "LA TUA SEZIONE"), tipicamente usato sopra i titoli principali.
+- **Come lo fa**: Utilizza un tag `<h2>` con classi Tailwind per:
+  - Uppercase (`uppercase`)
+  - Spaziatura estesa tra le lettere (`tracking-[0.5em]`)
+  - Colore primario giallo (`text-primary-yellow`)
+  - Font weight semi-bold.
+
+**Esempio d'Uso:**
+```tsx
+<Subtitle content="LA TUA SEZIONE" />
+```
+
+#### **2. Quote** (`@components/atoms/Quote`)
+- **Cosa fa**: Visualizza una citazione elegante con la possibilità di evidenziare una specifica parte del testo con un colore diverso.
+- **Come lo fa**:
+  - Accetta `content` (testo completo), `colored` (parola da colorare) e `color` (colore target).
+  - **Logica interna**: Esegue uno `split` del testo usando la stringa `colored` come separatore. Mappa poi le parti risultanti, reinserendo la stringa `colored` avvolta in uno `<span>` con lo stile `color` passato come prop.
+  - Gestisce l'allineamento (`left`, `center`, `right`) tramite prop `layout`.
+
+**Esempio d'Uso:**
+```tsx
+<Quote
+  content="Il design è intelligenza resa visibile."
+  colored="intelligenza"
+  color="var(--primary-yellow)"
+  layout="center"
+/>
+```
+
+#### **3. Reveal** (`@components/atoms/Reveal`)
+- **Cosa fa**: Avvolge qualsiasi componente per animarne l'entrata nella viewport (fade-in + scorrimento).
+- **Come lo fa**:
+  - Utilizza `framer-motion`.
+  - Sfrutta l'hook `useInView` per rilevare quando l'elemento entra nello schermo.
+  - Applica varianti di animazione (`hidden` -> `visible`) che modificano `opacity` e `y` (o `x` in base alla `direction`).
+  - Supporta la prop `overflow` per gestire casi in cui il contenuto figlio ha trasformazioni (es. `scale` in hover) che verrebbero tagliate da `overflow: hidden`.
+
+**Esempio d'Uso:**
+```tsx
+<Reveal width="100%" delay={0.5} direction="left">
+  <h1>Titolo Animato</h1>
+</Reveal>
+```
+
+### **Molecules**
+
+#### **1. TitleC** (`@components/molecules/TitleC`)
+- **Cosa fa**: Crea un titolo di sezione grande e impattante, componendo un `Subtitle` opzionale e un testo principale H2, con capacità di evidenziazione parziale.
+- **Come lo fa**:
+  - Combina il componente atomico `Subtitle` (se presente la prop `sottotitolo`) con un `<h2>` custom.
+  - **Evidenziazione**: Replica la logica del componente `Quote`, splittando la stringa children in base alla prop `colored` e applicando il colore `color` alla parte corrispondente.
+  - Utilizza un layout flex column per distanziare sottotitolo e titolo.
+
+**Esempio d'Uso:**
+```tsx
+<TitleC
+  sottotitolo="CHI SIAMO"
+  colored="Forbes"
+  color="var(--primary-yellow)"
+>
+  Partnership con Forbes
+</TitleC>
+```
+
+#### **2. AtomicCard** (`@components/molecules/AtomicCard`)
+- **Cosa fa**: Una card informativa versatile utilizzata nelle griglie. Mostra gerarchicamente: immagine/icona, sottotitolo, titolo e descrizione.
+- **Come lo fa**:
+  - **Visual Logic**: Verifica se è passata una `immagine`:
+    - Se sì, renderizza un componente `Image` di Next.js che occupa i 2/3 superiori della card.
+    - Se no, mostra un'icona freccia colorata nell'angolo in alto a destra.
+  - **Layout**: Utilizza Flexbox (`flex-col`) per impilare i contenuti. La descrizione è spinta in fondo al contenitore (`mt-auto` o `justify-end`) per allineare visivamente le card di altezze diverse.
+
+**Esempio d'Uso:**
+```tsx
+<AtomicCard
+  title="Titolo Card"
+  subtitle="SOTTOTITOLO"
+  description="Descrizione breve..."
+  colorIcon="var(--primary-yellow)"
+/>
+```
+
+#### **3. CardGrid** (`@components/molecules/CardGrid`)
+- **Cosa fa**: Dispone una lista di elementi (tipicamente `AtomicCard`) in una griglia responsiva e ne orchestra l'animazione di entrata.
+- **Come lo fa**:
+  - **Rendering**: Mappa i children e li avvolge in `motion.div`.
+  - **Animazione**: Utilizza la proprietà `staggerChildren` di `framer-motion` sul contenitore padre. Questo fa sì che ogni figlio appaia in sequenza con un leggero ritardo (0.2s) rispetto al precedente, creando un effetto "a cascata".
+  - **Gestione Spazio**: Include la logica `fillRow`: se attiva, l'ultimo elemento si espande (`grow`) per occupare tutto lo spazio rimanente nella riga finale.
+
+**Esempio d'Uso:**
+```tsx
+<CardGrid columns={3}>
+  <AtomicCard ... />
+  <AtomicCard ... />
+  <AtomicCard ... />
+</CardGrid>
+```
+
+#### **4. CompositIcon** (`@components/molecules/CompositIcon`)
+- **Cosa fa**: Crea un blocco informativo composto da un'icona grande a sinistra e un gruppo testo (Titolo + Sottotitolo) a destra. Usato per i dettagli dei biglietti (Data, Luogo, Capienza).
+- **Come lo fa**:
+  - Mappa una stringa `icon` (es. 'calendar') a un componente icona reale (`lucide-react`) tramite un oggetto di lookup `ICON_MAP`.
+  - Stilizza l'icona con il colore passato via prop.
+  - Affianca icona e testo usando un layout `flex-row`.
+
+**Esempio d'Uso:**
+```tsx
+<CompositIcon
+  icon="calendar"
+  colorIcon="var(--secondary-pink)"
+  title="DATA"
+  subtitle="15 Marzo 2026"
+/>
+```
+
+---
+
 ## **Come Iniziare**
 
 Per iniziare a utilizzare il template, segui questi passaggi:
