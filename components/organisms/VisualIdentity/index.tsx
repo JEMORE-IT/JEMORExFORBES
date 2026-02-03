@@ -20,8 +20,7 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
       </Reveal>
 
       <Reveal width="100%" delay={0.4}>
-        <div className="w-full flex flex-row mt-10">
-
+        <div className="mt-10 flex w-full flex-row">
           <div className="w-1/2">
             <AtomicCard
               key="card-1"
@@ -33,10 +32,9 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             />
           </div>
 
-          <div >
+          <div>
             <CardGrid columns={2} fillRow={true}>
               {[
-
                 <AtomicCard
                   key="card-2"
                   title="Titolo Card"
@@ -62,12 +60,9 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
                 />,
               ]}
             </CardGrid>
-
           </div>
-
         </div>
       </Reveal>
-
     </section>
   );
 };

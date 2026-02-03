@@ -16,7 +16,7 @@ const TicketSection: React.FC<TicketSectionProps> = () => {
         />
       </Reveal>
 
-      <div className="md: flex flex-col items-center justify-center mt-20">
+      <div className="md: mt-20 flex flex-col items-center justify-center">
         <Reveal width="100%" delay={0.4}>
           <TitleC
             sottotitolo="Join the Journey"

@@ -6,7 +6,12 @@ import { cn } from '@/lib/utils';
 
 import CardGridProps from './index.types';
 
-export function CardGrid({ children, columns, className, fillRow }: CardGridProps) {
+export function CardGrid({
+  children,
+  columns,
+  className,
+  fillRow,
+}: CardGridProps) {
   const columnWidths = {
     1: 'w-full',
     2: 'w-full sm:w-1/2',
@@ -58,7 +63,8 @@ export function CardGrid({ children, columns, className, fillRow }: CardGridProp
               key={index}
               className={cn(
                 'flex flex-col p-2 md:p-4', // Gap ridotto a 8px (p-2) su mobile
-                columnWidths[columns as keyof typeof columnWidths] || 'lg:w-1/3',
+                columnWidths[columns as keyof typeof columnWidths] ||
+                  'lg:w-1/3',
                 fillRow && 'grow' // Se fillRow è true, la card si espande per riempire lo spazio
               )}
             >

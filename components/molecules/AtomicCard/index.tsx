@@ -83,7 +83,7 @@ export function AtomicCard({
           </div>
         </CardHeader>
 
-        <CardContent className="flex-grow flex flex-col justify-end px-4 pb-4 md:px-6 md:pb-6">
+        <CardContent className="flex flex-grow flex-col justify-end px-4 pb-4 md:px-6 md:pb-6">
           <p className="text-xs leading-relaxed text-tertiary-gray md:text-sm">
             {description}
           </p>
