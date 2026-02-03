@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = () => {
           className="w-full max-w-6xl object-cover"
         />
 
-        <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-16 md:gap-24">
+        <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-12 md:gap-24">
           <div className="flex flex-col items-center gap-2">
             <Subtitle
               content="MODENA"
