@@ -16,8 +16,9 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
         Urban Underground
       </TitleC>
 
-      <CardGrid columns={3}>
-        {[
+      <div className="w-full flex flex-row mt-10">
+
+        <div className="w-1/2">
           <AtomicCard
             key="card-1"
             title="Titolo Card"
@@ -25,25 +26,46 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             description="Testo Testo Testo Testo Testo Testo Testo Testo"
             immagine="/images/typography.png"
             colorIcon="var(--primary-yellow)"
-          />,
+          />
+        </div>
 
-          <AtomicCard
-            key="card-2"
-            title="Titolo Card"
-            subtitle="SECTION"
-            description="Testo Testo Testo Testo Testo Testo Testo Testo"
-            colorIcon="var(--secondary-pink)"
-          />,
+        <div >
+          <CardGrid columns={2} fillRow={true}>
+            {[
 
-          <AtomicCard
-            key="card-3"
-            title="Titolo Card"
-            subtitle="SECTION"
-            description="Testo Testo Testo Testo Testo Testo Testo Testo"
-            colorIcon="var(--tertiary-blue)"
-          />,
-        ]}
-      </CardGrid>
+              <AtomicCard
+                key="card-2"
+                title="Titolo Card"
+                subtitle="SECTION"
+                description="Testo Testo Testo Testo Testo Testo Testo Testo"
+                colorIcon="var(--secondary-pink)"
+              />,
+
+              <AtomicCard
+                key="card-3"
+                title="Titolo Card"
+                subtitle="SECTION"
+                description="Testo Testo Testo Testo Testo Testo Testo Testo"
+                colorIcon="var(--tertiary-blue)"
+              />,
+
+              <AtomicCard
+                key="card-4"
+                title="Titolo Card"
+                subtitle="SECTION"
+                description="Testo Testo Testo Testo Testo Testo Testo Testo "
+                colorIcon="var(--tertiary-blue)"
+              />,
+            ]}
+          </CardGrid>
+
+
+
+
+        </div>
+
+      </div>
+
     </section>
   );
 };

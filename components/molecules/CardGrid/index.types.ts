@@ -5,4 +5,5 @@ export default interface CardGridProps {
   columns?: number; // Valore intero per definire le colonne
   className?: string;
   gap?: 'small' | 'medium' | 'large';
+  fillRow?: boolean;
 }
