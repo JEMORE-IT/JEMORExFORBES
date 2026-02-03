@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = () => {
         </Reveal>
 
         <Reveal width="fit-content" delay={0.4}>
-          <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-12 md:gap-24">
+          <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-4 md:gap-24">
             <div className="flex flex-col items-center gap-2">
               <Subtitle
                 content="MODENA"

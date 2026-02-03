@@ -30,25 +30,13 @@ const TitleC: FC<TitleProps> = ({
 
   return (
     <div
+      className="mt-16 flex flex-col gap-1"
       style={{
         textAlign: layout,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '0.25rem',
-        marginTop: '4rem',
       }}
     >
       {sottotitolo && <Subtitle content={sottotitolo} />}
-      <h2
-        style={{
-          fontSize: '3rem', // 4xl/5xl equivalent
-          fontWeight: '500',
-          lineHeight: 1.1,
-          fontFamily: 'var(--font-inter)',
-          color: 'white', // Assuming dark background as per screenshot
-          margin: 0,
-        }}
-      >
+      <h2 className="m-0 font-inter text-3xl font-medium leading-tight text-white md:text-5xl">
         {renderContent()}
       </h2>
     </div>

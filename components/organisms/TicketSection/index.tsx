@@ -8,7 +8,7 @@ import TicketSectionProps from './index.types';
 
 const TicketSection: React.FC<TicketSectionProps> = () => {
   return (
-    <section className="mx-auto mb-20 mt-20 flex max-w-6xl flex-col items-center justify-center gap-y-8 px-6 py-10">
+    <section className="mx-auto my-10 flex max-w-6xl flex-col items-center justify-center gap-y-8 px-6 py-10 md:my-20">
       <Reveal width="100%">
         <Quote
           content={`The path from knowledge to experience is not a straight line — it's a journey of discovery.`}
