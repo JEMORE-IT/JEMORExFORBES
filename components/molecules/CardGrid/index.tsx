@@ -64,7 +64,7 @@ export function CardGrid({
               className={cn(
                 'flex flex-col p-2 md:p-4', // Gap ridotto a 8px (p-2) su mobile
                 columnWidths[columns as keyof typeof columnWidths] ||
-                'lg:w-1/3',
+                  'lg:w-1/3',
                 fillRow && 'grow' // Se fillRow è true, la card si espande per riempire lo spazio
               )}
             >

@@ -26,9 +26,18 @@ export default function BackgroundCanvas() {
     };
 
     const draw = () => {
-      if (!img.complete || !ctx) return;
+      if (!ctx) return;
+      // Debug log
+      console.log('Drawing canvas...', { width: canvas.width, height: canvas.height, imgComplete: img.complete });
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      if (!img.complete) {
+        // Fallback visibility check: fill with red if image not loaded yet
+        ctx.fillStyle = 'red';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        return;
+      }
 
       // Logica "Cover": calcoliamo la scala per riempire sempre il canvas
       const scale = Math.max(
@@ -46,7 +55,12 @@ export default function BackgroundCanvas() {
     };
 
     img.onload = () => {
+      console.log('Background image loaded');
       resizeCanvas();
+    };
+
+    img.onerror = (e) => {
+      console.error('Error loading background image:', e);
     };
 
     window.addEventListener('resize', resizeCanvas);
