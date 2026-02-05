@@ -12,7 +12,8 @@ export default function BackgroundCanvas() {
     if (!ctx) return;
 
     const img = new Image();
-    img.src = '/images/bg.png';
+    // Proviamo con .jpg per evitare problemi di cache o corruzione del .png
+    img.src = '/images/bg.jpg';
 
     const resizeCanvas = () => {
       const width = window.innerWidth;
@@ -21,7 +22,6 @@ export default function BackgroundCanvas() {
       canvas.width = width;
       canvas.height = height;
 
-      // Riddisegniamo subito dopo il resize per evitare sfarfallii
       draw();
     };
 
@@ -30,20 +30,22 @@ export default function BackgroundCanvas() {
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      if (!img.complete) return;
+      if (!img.complete) {
+        // Fallback: se l'immagine non è ancora pronta o fallisce,
+        // coloriamo lo sfondo con il blu del tema
+        ctx.fillStyle = '#222c7c'; // --jemore-blu-rgb
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        return;
+      }
 
-      // Logica "Cover": calcoliamo la scala per riempire sempre il canvas
       const scale = Math.max(
         canvas.width / img.width,
         canvas.height / img.height
       );
 
-      // Centriamo l'immagine nel canvas
       const x = canvas.width / 2 - (img.width / 2) * scale;
       const y = canvas.height / 2 - (img.height / 2) * scale;
 
-      // RIMOSSO IL PARALLAX: usiamo 'y' fisso invece di 'finalY'
-      // L'immagine rimarrà ancorata al centro del viewport
       ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
     };
 
@@ -52,7 +54,9 @@ export default function BackgroundCanvas() {
     };
 
     img.onerror = (e) => {
-      console.error('Error loading background image:', e);
+      console.error('Error loading background image, using fallback color:', e);
+      // Forziamo il redraw per applicare il colore di fallback
+      draw();
     };
 
     window.addEventListener('resize', resizeCanvas);
