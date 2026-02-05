@@ -28,16 +28,14 @@ export default function BackgroundCanvas() {
     const draw = () => {
       if (!ctx) return;
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // NUCLEAR DEBUG: Force Red background
+      ctx.fillStyle = 'red';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      console.log('NUCLEAR DEBUG: Canvas filled with RED');
 
-      if (!img.complete) {
-        // Fallback: se l'immagine non è ancora pronta o fallisce,
-        // coloriamo lo sfondo con il blu del tema
-        ctx.fillStyle = '#222c7c'; // --jemore-blu-rgb
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        return;
-      }
+      if (!img.complete) return;
 
+      // Draw image over red if loaded
       const scale = Math.max(
         canvas.width / img.width,
         canvas.height / img.height
@@ -74,8 +72,8 @@ export default function BackgroundCanvas() {
     <>
       <canvas
         ref={canvasRef}
-        // Il fixed e z-0 lo tengono dietro al contenuto (che ha z-10)
-        className="pointer-events-none fixed left-0 top-0 z-0 h-full w-full"
+        // NUCLEAR DEBUG: z-100 to be on top of everything
+        className="pointer-events-none fixed left-0 top-0 z-[100] h-full w-full"
       />
       {/* Overlay scuro per migliorare la leggibilità delle card trasparenti */}
       <div className="pointer-events-none fixed left-0 top-0 z-[1] h-full w-full bg-black/60" />
