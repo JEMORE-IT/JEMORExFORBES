@@ -20,8 +20,8 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
       </Reveal>
 
       <Reveal width="100%" delay={0.4}>
-        <div className="mt-10 flex w-full flex-row">
-          <div className="w-1/2">
+        <div className="mt-10 grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+          <div>
             <AtomicCard
               key="card-1"
               title="Titolo Card"
