@@ -63,7 +63,7 @@ export const Reveal = ({
       style={{ position: 'relative', width, overflow }}
       className={className}
     >
-      <motion.div variants={variants} initial="hidden" animate={mainControls}>
+      <motion.div variants={variants} initial="visible" animate={mainControls}>
         {children}
       </motion.div>
     </div>
