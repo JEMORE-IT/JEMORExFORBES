@@ -11,13 +11,22 @@ const Hero: React.FC<HeroProps> = () => {
   return (
     <section className="mb-20 px-4 py-10 text-center">
       <div className="container mx-auto mb-40 flex flex-col items-center">
-        <Reveal width="fit-content">
-          <div className="relative h-[60vh] w-full max-w-6xl md:h-[400px]">
+        <Reveal width="100%">
+          <div className="relative mx-auto aspect-[9/16] w-full max-w-4xl md:aspect-[16/9]">
+            {/* Mobile Image */}
             <Image
-              src="/images/Hero_image.svg"
+              src="/images/HeroMobile.svg"
               alt="Hero"
               fill
-              className="object-cover"
+              className="object-cover md:hidden"
+              priority
+            />
+            {/* Desktop Image */}
+            <Image
+              src="/images/hero_image.svg"
+              alt="Hero"
+              fill
+              className="hidden object-cover md:block"
               priority
             />
           </div>
