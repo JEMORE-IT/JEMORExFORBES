@@ -27,17 +27,10 @@ export default function BackgroundCanvas() {
 
     const draw = () => {
       if (!ctx) return;
-      // Debug log
-      console.log('Drawing canvas...', { width: canvas.width, height: canvas.height, imgComplete: img.complete });
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      if (!img.complete) {
-        // Fallback visibility check: fill with red if image not loaded yet
-        ctx.fillStyle = 'red';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        return;
-      }
+      if (!img.complete) return;
 
       // Logica "Cover": calcoliamo la scala per riempire sempre il canvas
       const scale = Math.max(
@@ -55,7 +48,6 @@ export default function BackgroundCanvas() {
     };
 
     img.onload = () => {
-      console.log('Background image loaded');
       resizeCanvas();
     };
 
@@ -78,11 +70,11 @@ export default function BackgroundCanvas() {
     <>
       <canvas
         ref={canvasRef}
-        // Il -z-10 e fixed la tengono dietro a tutto
-        className="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full"
+        // Il fixed e z-0 lo tengono dietro al contenuto (che ha z-10)
+        className="pointer-events-none fixed left-0 top-0 z-0 h-full w-full"
       />
       {/* Overlay scuro per migliorare la leggibilità delle card trasparenti */}
-      <div className="pointer-events-none fixed left-0 top-0 -z-[9] h-full w-full bg-black/60" />
+      <div className="pointer-events-none fixed left-0 top-0 z-[1] h-full w-full bg-black/60" />
     </>
   );
 }
