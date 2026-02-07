@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { FC } from 'react';
 
-import { useMobile } from '@/lib/hooks/useMobile';
 import { websiteConfig } from '@/website.config';
 import DesktopNav from '@molecules/DesktopNav';
 import MobileNav from '@molecules/MobileNav';
@@ -14,7 +13,6 @@ import HeaderProps, { Route } from './index.types';
 
 const Header: FC<HeaderProps> = () => {
   const pathname: string = usePathname();
-  const isMobile: boolean = useMobile();
 
   const routes: Route[] = websiteConfig.menuItems.map((item) => ({
     href: item.href,
@@ -37,11 +35,10 @@ const Header: FC<HeaderProps> = () => {
           </Link>
 
           <div>
-            {isMobile ? (
-              <MobileNav routes={routes} />
-            ) : (
+            <MobileNav routes={routes} />
+            <div className="hidden md:block">
               <DesktopNav routes={routes} />
-            )}
+            </div>
           </div>
         </div>
       </header>
