@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   :root,
   .jemore-theme-light {
     --jemore-blu-rgb: #222c7c;
