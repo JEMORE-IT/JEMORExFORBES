@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   :root,
   .jemore-theme-light {
     --jemore-blu-rgb: #222c7c;
@@ -57,7 +58,7 @@
   /* Impostiamo lo sfondo direttamente sul body */
   body {
     @apply text-foreground;
-    background-image: url('/images/bg.png');
+    background-image: url('/images/bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
