@@ -47,7 +47,7 @@ export function CardGrid({
       */}
       <motion.div
         variants={containerVariants}
-        initial="hidden"
+        initial="visible"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         className={cn(

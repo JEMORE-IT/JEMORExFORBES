@@ -12,7 +12,8 @@ export default function BackgroundCanvas() {
     if (!ctx) return;
 
     const img = new Image();
-    img.src = '/images/bg.png';
+    // Proviamo con .jpg per evitare problemi di cache o corruzione del .png
+    img.src = '/images/bg.jpg';
 
     const resizeCanvas = () => {
       const width = window.innerWidth;
@@ -21,32 +22,39 @@ export default function BackgroundCanvas() {
       canvas.width = width;
       canvas.height = height;
 
-      // Riddisegniamo subito dopo il resize per evitare sfarfallii
       draw();
     };
 
     const draw = () => {
-      if (!img.complete || !ctx) return;
+      if (!ctx) return;
 
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // NUCLEAR DEBUG: Force Red background
+      ctx.fillStyle = 'red';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      console.log('NUCLEAR DEBUG: Canvas filled with RED');
 
-      // Logica "Cover": calcoliamo la scala per riempire sempre il canvas
+      if (!img.complete) return;
+
+      // Draw image over red if loaded
       const scale = Math.max(
         canvas.width / img.width,
         canvas.height / img.height
       );
 
-      // Centriamo l'immagine nel canvas
       const x = canvas.width / 2 - (img.width / 2) * scale;
       const y = canvas.height / 2 - (img.height / 2) * scale;
 
-      // RIMOSSO IL PARALLAX: usiamo 'y' fisso invece di 'finalY'
-      // L'immagine rimarrà ancorata al centro del viewport
       ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
     };
 
     img.onload = () => {
       resizeCanvas();
+    };
+
+    img.onerror = (e) => {
+      console.error('Error loading background image, using fallback color:', e);
+      // Forziamo il redraw per applicare il colore di fallback
+      draw();
     };
 
     window.addEventListener('resize', resizeCanvas);
@@ -64,11 +72,11 @@ export default function BackgroundCanvas() {
     <>
       <canvas
         ref={canvasRef}
-        // Il -z-10 e fixed la tengono dietro a tutto
-        className="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full"
+        // NUCLEAR DEBUG: z-100 to be on top of everything
+        className="pointer-events-none fixed left-0 top-0 z-[100] h-full w-full"
       />
       {/* Overlay scuro per migliorare la leggibilità delle card trasparenti */}
-      <div className="pointer-events-none fixed left-0 top-0 -z-[9] h-full w-full bg-black/60" />
+      <div className="pointer-events-none fixed left-0 top-0 z-[1] h-full w-full bg-black/60" />
     </>
   );
 }
