@@ -9,6 +9,9 @@ import { websiteConfig } from '@/website.config';
 import DesktopNav from '@molecules/DesktopNav';
 import MobileNav from '@molecules/MobileNav';
 
+import { useMobile } from '../../../lib/hooks/useMobile';
+import { websiteConfig } from '../../../website.config';
+
 import HeaderProps, { Route } from './index.types';
 
 const Header: FC<HeaderProps> = () => {

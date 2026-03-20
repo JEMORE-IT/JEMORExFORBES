@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Quote from '@/components/atoms/Quote';
-import Subtitle from '@/components/atoms/Subtitle';
+import Quote from '../../../components/atoms/Quote';
+import Subtitle from '../../../components/atoms/Subtitle';
 
 import HeroProps from './index.types';
 

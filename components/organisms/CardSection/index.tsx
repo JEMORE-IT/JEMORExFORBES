@@ -1,6 +1,6 @@
-import { AtomicCard } from '@/components/molecules/AtomicCard';
-import { CardGrid } from '@/components/molecules/CardGrid';
-import TitleC from '@/components/molecules/TitleC';
+import { AtomicCard } from '../../../components/molecules/AtomicCard';
+import { CardGrid } from '../../../components/molecules/CardGrid';
+import TitleC from '../../../components/molecules/TitleC';
 
 import CardSectionProps from './index.types';
 
