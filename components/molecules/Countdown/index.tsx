@@ -70,19 +70,19 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         L&apos;evento inizia tra
       </TitleC>
 
-      <div className="mb-24 mt-24 flex w-full flex-wrap justify-center gap-8 text-center md:gap-16">
+      <div className="mt-12 grid w-full grid-cols-2 place-items-center gap-4 text-center sm:flex sm:flex-row sm:justify-center sm:gap-8 md:mt-16 md:gap-16">
         {!mounted ? (
           // Skeleton prima dell'idratazione
           [...Array(SKELETON_BLOCKS_COUNT)].map((_, i) => (
             <Card
               key={i}
-              className="flex h-24 w-24 flex-col items-center justify-center border-none bg-black text-white shadow-2xl backdrop-blur-md md:h-32 md:w-32"
+              className="flex h-24 w-24 flex-col items-center justify-center border-none bg-black text-white shadow-2xl backdrop-blur-md sm:h-28 sm:w-28 md:h-32 md:w-32"
             >
               <CardContent className="flex flex-col items-center justify-center p-0">
-                <span className="font-inter text-4xl font-bold text-white/30 md:text-5xl">
+                <span className="font-inter text-2xl font-bold text-white/30 sm:text-4xl md:text-5xl">
                   00
                 </span>
-                <span className="mt-2 font-opensans text-xs uppercase tracking-widest text-white/40 md:text-sm">
+                <span className="mt-1 font-opensans text-[9px] uppercase tracking-wider text-white/40 sm:mt-2 sm:text-xs md:text-sm">
                   {['Giorni', 'Ore', 'Minuti', 'Secondi'][i]}
                 </span>
               </CardContent>
@@ -143,15 +143,15 @@ const TimeBlock: React.FC<TimeBlockProps & { index: number }> = ({
         ease: 'easeOut',
       }}
     >
-      <Card className="flex h-24 w-24 flex-col items-center justify-center border-none bg-black text-white shadow-2xl backdrop-blur-md transition-transform duration-300 hover:-translate-y-2 md:h-32 md:w-32">
+      <Card className="flex h-24 w-24 flex-col items-center justify-center border-none bg-black text-white shadow-2xl backdrop-blur-md transition-transform duration-300 hover:-translate-y-2 sm:h-28 sm:w-28 md:h-32 md:w-32">
         <CardContent className="flex flex-col items-center justify-center p-0">
           <span
-            className="font-inter text-4xl font-bold md:text-5xl"
+            className="font-inter text-2xl font-bold sm:text-4xl md:text-5xl"
             style={{ color: color }}
           >
             {value.toString().padStart(2, '0')}
           </span>
-          <span className="mt-2 font-opensans text-xs uppercase tracking-widest text-white/60 md:text-sm">
+          <span className="mt-1 font-opensans text-[9px] uppercase tracking-wider text-white/60 sm:mt-2 sm:text-xs md:text-sm">
             {label}
           </span>
         </CardContent>

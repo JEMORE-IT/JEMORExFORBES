@@ -12,7 +12,7 @@ export const websiteConfig = {
   logo_img: '/images/logo.svg',
   menuItems: [
     { text: 'HomePage', href: '/' },
-    { text: 'Next Leaders', href: '' },
+    { text: 'Next Leaders', href: 'https://nextleaders.forbes.it/' },
     { text: 'Programma', href: '/programma' },
     { text: 'Partner', href: '/partner' },
     { text: 'Contatti', href: '/contatti' },

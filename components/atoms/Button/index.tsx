@@ -7,12 +7,12 @@ const ButtonTicket: FC<ButtonProps> = ({ href, fill, shadow, textColor }) => {
   return (
     <Link
       href={href}
-      className="relative inline-flex items-center justify-center px-3 py-1 text-sm font-bold uppercase tracking-wide transition-transform duration-300 hover:scale-105"
+      className="group relative inline-flex items-center justify-center px-4 py-2 text-sm font-bold uppercase tracking-wide transition-all duration-300 hover:-translate-y-1 hover:scale-110"
     >
       {/* Solid offset shadow */}
       <span
         aria-hidden
-        className="absolute inset-0 -z-10 translate-x-[5px] translate-y-[5px] rounded-md"
+        className="absolute inset-0 -z-10 translate-x-[6px] translate-y-[6px] rounded-md transition-transform duration-300 group-hover:translate-x-[8px] group-hover:translate-y-[8px]"
         style={{ backgroundColor: shadow }}
       />
 
