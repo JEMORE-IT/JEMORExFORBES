@@ -1,0 +1,592 @@
+[
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\app\\layout.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\app\\page.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\app\\programma\\page.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\BackgroundCanvas\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\BackgroundCanvas\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\Button\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\Button\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\Quote\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\Quote\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\Subtitle\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\Subtitle\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\ThemeProvider\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\ThemeProvider\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\ThemeSelector\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\atoms\\ThemeSelector\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\AtomicCard\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\AtomicCard\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\CardGrid\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\CardGrid\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\CompositIcon\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\CompositIcon\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\DesktopNav\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\Footer\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\Footer\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\Hero\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\Hero\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\MobileNav\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\TimelineItem\\index.tsx",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 1,
+        "message": "No magic number: -50.",
+        "line": 38,
+        "column": 44,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 38,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 1,
+        "message": "No magic number: 50.",
+        "line": 38,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 38,
+        "endColumn": 52
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "'use client';\n\nimport { motion } from 'framer-motion';\nimport React from 'react';\n\nimport TimelineItemProps from './index.types';\n\nconst TimelineItem: React.FC<TimelineItemProps> = ({\n  time,\n  title,\n  description,\n  color = 'var(--primary-yellow)',\n  align = 'left',\n}) => {\n  const isLeft = align === 'left';\n\n  return (\n    <div className={`relative flex w-full flex-col md:flex-row items-center justify-between mb-16 ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>\n      \n      {/* Centro: Linea e Pallino (visibile su MD o superiore) */}\n      <div className=\"absolute left-8 md:left-1/2 flex h-full -translate-x-1/2 items-center justify-center\">\n        <div className=\"h-full w-px bg-white/20\"></div>\n      </div>\n\n      <motion.div \n        className=\"absolute left-8 md:left-1/2 z-10 hidden md:flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full bg-background\"\n        initial={{ scale: 0 }}\n        whileInView={{ scale: 1 }}\n        viewport={{ once: true, amount: 0.8 }}\n        transition={{ duration: 0.4, type: 'spring' }}\n      >\n        <div className=\"h-3 w-3 rounded-full\" style={{ backgroundColor: color }} />\n      </motion.div>\n\n      {/* Contenuto Reale */}\n      <motion.div\n        className={`w-full pl-20 pr-4 md:w-5/12 md:px-0 ${isLeft ? 'md:text-right' : 'md:text-left'}`}\n        initial={{ opacity: 0, x: isLeft ? -50 : 50, y: 30 }}\n        whileInView={{ opacity: 1, x: 0, y: 0 }}\n        viewport={{ once: true, amount: 0.5 }}\n        transition={{ duration: 0.6, ease: 'easeOut' }}\n      >\n        <span className=\"font-inter text-sm font-semibold tracking-wider\" style={{ color }}>\n          {time}\n        </span>\n        <h3 className=\"mt-2 font-inter text-2xl font-bold text-white\">{title}</h3>\n        <p className=\"mt-2 text-white/70 font-opensans leading-relaxed\">\n          {description}\n        </p>\n      </motion.div>\n\n      {/* Spazio Voto per l'altro lato */}\n      <div className=\"hidden w-5/12 md:block\"></div>\n\n      {/* Pallino per Mobile (assoluto a sinistra) */}\n      <motion.div \n        className=\"absolute left-8 top-0 z-10 flex md:hidden h-5 w-5 -translate-x-1/2 items-center justify-center rounded-full bg-background\"\n        initial={{ scale: 0 }}\n        whileInView={{ scale: 1 }}\n        viewport={{ once: true, amount: 0.8 }}\n        transition={{ duration: 0.4, type: 'spring' }}\n      >\n        <div className=\"h-2.5 w-2.5 rounded-full\" style={{ backgroundColor: color }} />\n      </motion.div>\n    </div>\n  );\n};\n\nexport default TimelineItem;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\TimelineItem\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\TitleC\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\molecules\\TitleC\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\CardSection\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\CardSection\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\Header\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\Header\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\TicketSection\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\TicketSection\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\TimelineSection\\index.tsx",
+    "messages": [
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 23,
+        "column": 72,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": { "alt": "&apos;" },
+            "fix": {
+              "range": [725, 883],
+              "text": "\n          Scopri le attività previste per la giornata, dal check-in all&apos;aperitivo finale.\n          Il programma potrebbe subire leggere variazioni.\n        "
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": { "alt": "&lsquo;" },
+            "fix": {
+              "range": [725, 883],
+              "text": "\n          Scopri le attività previste per la giornata, dal check-in all&lsquo;aperitivo finale.\n          Il programma potrebbe subire leggere variazioni.\n        "
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": { "alt": "&#39;" },
+            "fix": {
+              "range": [725, 883],
+              "text": "\n          Scopri le attività previste per la giornata, dal check-in all&#39;aperitivo finale.\n          Il programma potrebbe subire leggere variazioni.\n        "
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": { "alt": "&rsquo;" },
+            "fix": {
+              "range": [725, 883],
+              "text": "\n          Scopri le attività previste per la giornata, dal check-in all&rsquo;aperitivo finale.\n          Il programma potrebbe subire leggere variazioni.\n        "
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "'use client';\n\nimport React from 'react';\n\nimport TimelineItem from '@/components/molecules/TimelineItem';\nimport TitleC from '@/components/molecules/TitleC';\n\nimport TimelineSectionProps from './index.types';\n\nconst TimelineSection: React.FC<TimelineSectionProps> = ({ events }) => {\n  return (\n    <section className=\"mx-auto flex w-full max-w-6xl flex-col items-center justify-center px-6 py-20 pb-32\">\n      <div className=\"mb-20 text-center\">\n        <TitleC\n          sottotitolo=\"THE PROGRAM\"\n          colored=\"Timeline\"\n          color=\"var(--tertiary-blue)\"\n          layout=\"center\"\n        >\n          Event Timeline\n        </TitleC>\n        <p className=\"mt-4 max-w-2xl text-white/70 text-center font-opensans\">\n          Scopri le attività previste per la giornata, dal check-in all'aperitivo finale.\n          Il programma potrebbe subire leggere variazioni.\n        </p>\n      </div>\n\n      <div className=\"relative w-full\">\n        {/* Linea verticale centrale per Desktop (collega tutta la timeline) */}\n        <div className=\"absolute left-8 md:left-1/2 top-0 h-full w-px -translate-x-1/2 bg-white/10 hidden md:block\"></div>\n        {/* Linea verticale per Mobile (collega tutta la timeline a sinistra) */}\n        <div className=\"absolute left-8 top-0 h-full w-px -translate-x-1/2 bg-white/10 block md:hidden\"></div>\n\n        <div className=\"flex flex-col w-full relative z-10 py-10\">\n          {events.map((event, index) => (\n            <TimelineItem\n              key={index}\n              time={event.time}\n              title={event.title}\n              description={event.description}\n              color={event.color}\n              align={index % 2 === 0 ? 'left' : 'right'}\n            />\n          ))}\n        </div>\n      </div>\n    </section>\n  );\n};\n\nexport default TimelineSection;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\TimelineSection\\index.types.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\VisualIdentity\\index.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\components\\organisms\\VisualIdentity\\index.types.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\eslint.config.mjs",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\lib\\fonts.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\lib\\hooks\\useMobile.tsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\lib\\utils.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\next-env.d.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\dican\\Desktop\\uni\\Progetti\\JEMORExFORBES\\website.config.ts",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]

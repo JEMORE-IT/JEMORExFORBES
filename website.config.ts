@@ -13,9 +13,9 @@ export const websiteConfig = {
   menuItems: [
     { text: 'HomePage', href: '/' },
     { text: 'Next Leaders', href: '' },
-    { text: 'Programma', href: '' },
-    { text: 'Partner', href: '' },
-    { text: 'Contatti', href: '' },
+    { text: 'Programma', href: '/programma' },
+    { text: 'Partner', href: '/partner' },
+    { text: 'Contatti', href: '/contatti' },
   ],
   title: 'Evento JournEy',
   description:
