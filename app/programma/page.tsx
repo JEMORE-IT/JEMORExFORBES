@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
-import BackgroundCanvas from '../../components/atoms/BackgroundCanvas';
+import BackgroundCanvas from '@atoms/BackgroundCanvas';
+
 import TimelineSection from '../../components/organisms/TimelineSection';
 
 export const metadata: Metadata = {
