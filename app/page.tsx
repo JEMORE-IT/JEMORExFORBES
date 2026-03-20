@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Quote from '../components/atoms/Quote';
 import Countdown from '../components/molecules/Countdown';
 import Hero from '../components/molecules/Hero';
+import ScrollExpandIn from '../components/molecules/ScrollExpandIn';
 import ScrollFadeIn from '../components/molecules/ScrollFadeIn';
 import CardSection from '../components/organisms/CardSection';
 import TicketSection from '../components/organisms/TicketSection';
@@ -51,9 +52,9 @@ export default function Home() {
         </div>
       </ScrollFadeIn>
 
-      <ScrollFadeIn>
+      <ScrollExpandIn delay={0.3}>
         <TicketSection />
-      </ScrollFadeIn>
+      </ScrollExpandIn>
     </div>
   );
 }
