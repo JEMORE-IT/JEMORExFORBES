@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = () => {
       </div>
 
       <Quote
-        content={`Where knowledge meets experience. A Forbes collaboration with JEMORE.`}
+        content={`a decade of ideas, connections and growth.`}
         layout="center"
       />
     </section>

@@ -11,10 +11,11 @@ const font_variables = Object.values(fonts).map(
 export const websiteConfig = {
   logo_img: '/images/logo.svg',
   menuItems: [
-    { text: 'JEMORE', href: '/' },
-    { text: 'FORBES', href: '' },
-    { text: 'ODG', href: '' },
-    { text: 'INFO', href: '' },
+    { text: 'HomePage', href: '/' },
+    { text: 'Next Leaders', href: '' },
+    { text: 'Programma', href: '/programma' },
+    { text: 'Partner', href: '/partner' },
+    { text: 'Contatti', href: '/contatti' },
   ],
   title: 'Evento JournEy',
   description:
