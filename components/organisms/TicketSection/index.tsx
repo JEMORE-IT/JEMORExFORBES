@@ -1,7 +1,7 @@
-import ButtonTicket from '@/components/atoms/Button';
-import Quote from '@/components/atoms/Quote';
-import CompositIcon from '@/components/molecules/CompositIcon';
-import TitleC from '@/components/molecules/TitleC';
+import ButtonTicket from '../../../components/atoms/Button';
+import Quote from '../../../components/atoms/Quote';
+import CompositIcon from '../../../components/molecules/CompositIcon';
+import TitleC from '../../../components/molecules/TitleC';
 
 import TicketSectionProps from './index.types';
 

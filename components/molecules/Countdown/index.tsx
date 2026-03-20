@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 
-import TitleC from '@/components/molecules/TitleC';
-import { Card, CardContent } from '@/components/ui/card';
+import TitleC from '../../../components/molecules/TitleC';
+import { Card, CardContent } from '../../../components/ui/card';
 
 export interface CountdownProps {
   targetDate: string; // Formato accettato da Date.parse, es. '2026-05-20T09:00:00Z'
@@ -53,7 +53,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         L&apos;evento inizia tra
       </TitleC>
 
-      <div className="mt-24 mb-24 flex w-full flex-wrap justify-center gap-8 text-center md:gap-16">
+      <div className="mb-24 mt-24 flex w-full flex-wrap justify-center gap-8 text-center md:gap-16">
         {!mounted ? (
           // Skeleton prima dell'idratazione
           [...Array(4)].map((_, i) => (

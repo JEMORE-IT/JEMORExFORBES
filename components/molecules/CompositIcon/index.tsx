@@ -3,7 +3,7 @@
 import { Calendar, MapPin, Users } from 'lucide-react';
 import { FC } from 'react';
 
-import Subtitle from '@/components/atoms/Subtitle';
+import Subtitle from '../../../components/atoms/Subtitle';
 
 import CompositIconProps, { CompositIconType } from './index.types';
 

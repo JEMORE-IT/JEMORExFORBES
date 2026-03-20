@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { FC } from 'react';
 
-import ButtonTicket from '@/components/atoms/Button';
-import { cn } from '@/lib/utils';
+import ButtonTicket from '../../../components/atoms/Button';
+import { cn } from '../../../lib/utils';
 import { NavProps, Route } from '@organisms/Header/index.types';
 
 const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {

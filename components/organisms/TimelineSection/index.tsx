@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import TimelineItem from '@/components/molecules/TimelineItem';
-import TitleC from '@/components/molecules/TitleC';
+import TimelineItem from '../../../components/molecules/TimelineItem';
+import TitleC from '../../../components/molecules/TitleC';
 
 import TimelineSectionProps from './index.types';
 

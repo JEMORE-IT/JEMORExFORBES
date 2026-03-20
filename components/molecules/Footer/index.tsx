@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
-import Subtitle from '@/components/atoms/Subtitle';
-import { websiteConfig } from '@/website.config';
+import Subtitle from '../../../components/atoms/Subtitle';
+import { websiteConfig } from '../../../website.config';
 
 import FooterProps from './index.types';
 

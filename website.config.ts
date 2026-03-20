@@ -1,6 +1,6 @@
 import { NextFontWithVariable } from 'next/dist/compiled/@next/font';
 
-import { fonts } from '@/lib/fonts';
+import { fonts } from './lib/fonts';
 
 const font_variables = Object.values(fonts).map(
   (font: NextFontWithVariable) => {
