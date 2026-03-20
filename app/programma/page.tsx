@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 
-import BackgroundCanvas from '../../components/atoms/BackgroundCanvas';
 import TimelineSection from '../../components/organisms/TimelineSection';
 
 export const metadata: Metadata = {
@@ -56,8 +55,6 @@ const mockEvents = [
 export default function Programma() {
   return (
     <>
-      <BackgroundCanvas />
-
       <div className="pt-20">
         <TimelineSection events={mockEvents} />
       </div>
