@@ -3,9 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
 
-import ButtonTicket from '../../../components/atoms/Button';
-import { cn } from '../../../lib/utils';
-import { websiteConfig } from '../../../website.config';
 import { Button } from '@components/ui/button';
 import {
   Sheet,
@@ -16,6 +13,10 @@ import {
   SheetTrigger,
 } from '@components/ui/sheet';
 import { NavProps } from '@organisms/Header/index.types';
+
+import ButtonTicket from '../../../components/atoms/Button';
+import { cn } from '../../../lib/utils';
+import { websiteConfig } from '../../../website.config';
 
 const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
   const [open, setOpen] = React.useState<boolean>(false);

@@ -5,10 +5,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { FC } from 'react';
 
-import { useMobile } from '../../../lib/hooks/useMobile';
-import { websiteConfig } from '../../../website.config';
 import DesktopNav from '@molecules/DesktopNav';
 import MobileNav from '@molecules/MobileNav';
+
+import { useMobile } from '../../../lib/hooks/useMobile';
+import { websiteConfig } from '../../../website.config';
 
 import HeaderProps, { Route } from './index.types';
 

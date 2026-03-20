@@ -10,6 +10,19 @@ export interface CountdownProps {
   targetDate: string; // Formato accettato da Date.parse, es. '2026-05-20T09:00:00Z'
 }
 
+const MILLISECONDS_IN_SECOND = 1000;
+const SECONDS_IN_MINUTE = 60;
+const MINUTES_IN_HOUR = 60;
+const HOURS_IN_DAY = 24;
+
+const MILLISECONDS_IN_MINUTE = MILLISECONDS_IN_SECOND * SECONDS_IN_MINUTE;
+const MILLISECONDS_IN_HOUR = MILLISECONDS_IN_MINUTE * MINUTES_IN_HOUR;
+const MILLISECONDS_IN_DAY = MILLISECONDS_IN_HOUR * HOURS_IN_DAY;
+
+const SKELETON_BLOCKS_COUNT = 4;
+const ANIMATION_DELAY_MULTIPLIER = 0.1;
+const ANIMATION_DURATION = 0.5;
+
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   const [mounted, setMounted] = useState(false);
   const [timeLeft, setTimeLeft] = useState({
@@ -26,10 +39,14 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       const difference = +new Date(targetDate) - +new Date();
       if (difference > 0) {
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
+          days: Math.floor(difference / MILLISECONDS_IN_DAY),
+          hours: Math.floor((difference / MILLISECONDS_IN_HOUR) % HOURS_IN_DAY),
+          minutes: Math.floor(
+            (difference / MILLISECONDS_IN_MINUTE) % MINUTES_IN_HOUR
+          ),
+          seconds: Math.floor(
+            (difference / MILLISECONDS_IN_SECOND) % SECONDS_IN_MINUTE
+          ),
         });
       } else {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -37,7 +54,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     };
 
     calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 1000);
+    const timer = setInterval(calculateTimeLeft, MILLISECONDS_IN_SECOND);
 
     return () => clearInterval(timer);
   }, [targetDate]);
@@ -56,7 +73,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       <div className="mb-24 mt-24 flex w-full flex-wrap justify-center gap-8 text-center md:gap-16">
         {!mounted ? (
           // Skeleton prima dell'idratazione
-          [...Array(4)].map((_, i) => (
+          [...Array(SKELETON_BLOCKS_COUNT)].map((_, i) => (
             <Card
               key={i}
               className="flex h-24 w-24 flex-col items-center justify-center border-none bg-black text-white shadow-2xl backdrop-blur-md md:h-32 md:w-32"
@@ -120,7 +137,11 @@ const TimeBlock: React.FC<TimeBlockProps & { index: number }> = ({
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1, ease: 'easeOut' }}
+      transition={{
+        duration: ANIMATION_DURATION,
+        delay: index * ANIMATION_DELAY_MULTIPLIER,
+        ease: 'easeOut',
+      }}
     >
       <Card className="flex h-24 w-24 flex-col items-center justify-center border-none bg-black text-white shadow-2xl backdrop-blur-md transition-transform duration-300 hover:-translate-y-2 md:h-32 md:w-32">
         <CardContent className="flex flex-col items-center justify-center p-0">

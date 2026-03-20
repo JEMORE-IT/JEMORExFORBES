@@ -4,6 +4,8 @@ import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import * as React from 'react';
 
+import { ThemeSelectorProps } from '@atoms/ThemeSelector/index.types';
+
 import { Button } from '../../../components/ui/button';
 import {
   DropdownMenu,
@@ -11,7 +13,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '../../../components/ui/dropdown-menu';
-import { ThemeSelectorProps } from '@atoms/ThemeSelector/index.types';
 
 export function ThemeSelector({ className }: ThemeSelectorProps) {
   const { setTheme, systemTheme, theme } = useTheme();
