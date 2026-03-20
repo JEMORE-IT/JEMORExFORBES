@@ -7,7 +7,7 @@ import HeroProps from './index.types';
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="px-4 py-10 text-center">
+    <section className="px-4 py-4 text-center">
       <div className="container mx-auto mb-20 flex flex-col items-center">
         <div className="relative mx-auto aspect-[9/16] w-full max-w-4xl md:aspect-[16/9]">
           {/* Mobile Image */}
