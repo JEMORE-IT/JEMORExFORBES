@@ -70,7 +70,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         L&apos;evento inizia tra
       </TitleC>
 
-      <div className="mb-24 mt-24 flex w-full flex-wrap justify-center gap-8 text-center md:gap-16">
+      <div className="mt-12 flex w-full flex-wrap justify-center gap-8 text-center md:mt-16 md:gap-16">
         {!mounted ? (
           // Skeleton prima dell'idratazione
           [...Array(SKELETON_BLOCKS_COUNT)].map((_, i) => (

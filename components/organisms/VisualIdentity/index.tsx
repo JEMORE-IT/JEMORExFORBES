@@ -6,7 +6,7 @@ import VisualSectionProps from './index.types';
 
 const VisualSection: React.FC<VisualSectionProps> = () => {
   return (
-    <section className="mx-auto my-14 flex max-w-6xl flex-col items-start justify-center px-8 py-2">
+    <section className="mx-auto flex max-w-6xl flex-col items-start justify-center px-8 py-2">
       <TitleC
         sottotitolo="VISUAL IDENTITY"
         colored="Underground"

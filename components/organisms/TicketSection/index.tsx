@@ -1,5 +1,4 @@
 import ButtonTicket from '../../../components/atoms/Button';
-import Quote from '../../../components/atoms/Quote';
 import CompositIcon from '../../../components/molecules/CompositIcon';
 import TitleC from '../../../components/molecules/TitleC';
 
@@ -7,12 +6,7 @@ import TicketSectionProps from './index.types';
 
 const TicketSection: React.FC<TicketSectionProps> = () => {
   return (
-    <section className="mx-auto my-10 flex max-w-6xl flex-col items-center justify-center gap-y-8 px-6 py-10 md:my-20">
-      <Quote
-        content={`The path from knowledge to experience is not a straight line — it's a journey of discovery.`}
-        layout="center"
-      />
-
+    <section className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-y-12 px-6 py-10">
       <div className="md: mt-20 flex flex-col items-center justify-center">
         <TitleC
           sottotitolo="Join the Journey"

@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Quote from '../../../components/atoms/Quote';
 import Subtitle from '../../../components/atoms/Subtitle';
 
 import HeroProps from './index.types';
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="mb-20 px-4 py-10 text-center">
-      <div className="container mx-auto mb-40 flex flex-col items-center">
+    <section className="px-4 py-10 text-center">
+      <div className="container mx-auto mb-20 flex flex-col items-center">
         <div className="relative mx-auto aspect-[9/16] w-full max-w-4xl md:aspect-[16/9]">
           {/* Mobile Image */}
+
           <Image
             src="/images/HeroMobile.svg"
             alt="Hero"
@@ -53,11 +53,6 @@ const Hero: React.FC<HeroProps> = () => {
           </div>
         </div>
       </div>
-
-      <Quote
-        content={`a decade of ideas, connections and growth.`}
-        layout="center"
-      />
     </section>
   );
 };

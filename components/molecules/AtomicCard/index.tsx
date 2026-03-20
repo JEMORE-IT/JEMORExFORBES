@@ -29,9 +29,9 @@ export function AtomicCard({
 
   return (
     <motion.div
-      whileHover={{ scale: 1.02, y: -5 }}
+      whileHover={{ scale: 1.05, y: -8 }}
       whileTap={{ scale: 0.98 }} // Feedback tattile su mobile
-      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+      transition={{ type: 'spring', stiffness: 200, damping: 15 }}
       className="h-full w-full"
     >
       <Card
