@@ -30,7 +30,8 @@ export default function RootLayout({
           disableTransitionOnChange
           themes={websiteConfig.color_themes}
         >
-          <div className="relative flex min-h-screen flex-col">
+          {/* Sfondo gestito via CSS in globals.css */}
+          <div className="relative z-10 flex min-h-screen flex-col">
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />

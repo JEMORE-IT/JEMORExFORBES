@@ -7,6 +7,7 @@ import CardSection from '../components/organisms/CardSection';
 import TicketSection from '../components/organisms/TicketSection';
 import VisualSection from '../components/organisms/VisualIdentity';
 
+
 export const metadata: Metadata = {
   title: 'JEMORE ti vuole bene',
   description: 'anche se non ti paga',
@@ -15,8 +16,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <BackgroundCanvas />
-
       <Hero />
 
       {/* Target date di esempio: 20 Maggio 2026 */}
