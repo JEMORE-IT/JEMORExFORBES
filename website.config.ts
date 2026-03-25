@@ -9,7 +9,7 @@ const font_variables = Object.values(fonts).map(
 );
 
 export const websiteConfig = {
-  logo_img: '/images/logo.svg',
+  logo_img: '/images/logo_recolored.svg',
   menuItems: [
     { text: 'Home', href: '/' },
     { text: 'Next Leaders', href: 'https://nextleaders.forbes.it/' },

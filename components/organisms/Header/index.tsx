@@ -32,16 +32,6 @@ const Header: FC<HeaderProps> = () => {
               width={150}
               height={150}
               className="item-start cursor-pointer justify-center"
-              style={{
-                // Usa #ccf80c per colorare il logo.
-                // Le classi di tailwind non funzionano sugli svg (perchè ovvio che no),
-                // quindi un workaround è generare un filtro css che converta il colore:
-                // 1. brightness(0) — imposta l'immagine a nero
-                // 2. saturate(100%) — mantiene il contrasto originale
-                // 3. invert(89%) sepia(97%) saturate(1043%) hue-rotate(21deg) brightness(103%) contrast(97%) —  #ccf80c tradotto in filtro css
-                filter:
-                  'brightness(0) saturate(100%) invert(89%) sepia(97%) saturate(1043%) hue-rotate(21deg) brightness(103%) contrast(97%)',
-              }}
             />
           </Link>
 
