@@ -8,21 +8,21 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
   return (
     <section className="mx-auto flex max-w-6xl flex-col items-start justify-center px-8 py-2">
       <TitleC
-        sottotitolo="VISUAL IDENTITY"
-        colored="Underground"
+        sottotitolo="IL FORMAT"
+        colored="Nazionale"
         color="var(--secondary-pink)"
         layout="left"
       >
-        Urban Underground
+        Un Framework Nazionale
       </TitleC>
 
       <div className="mt-10 grid w-full grid-cols-1 gap-6 md:grid-cols-2">
         <div>
           <AtomicCard
             key="card-1"
-            title="Titolo Card"
-            subtitle="TYPOGRAPHY"
-            description="Testo Testo Testo Testo Testo Testo Testo Testo"
+            title="Next Leaders x JEMORE"
+            subtitle="IL FORMAT"
+            description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leader e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
             immagine="/images/typography.png"
             colorIcon="var(--primary-yellow)"
           />
@@ -33,25 +33,25 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             {[
               <AtomicCard
                 key="card-2"
-                title="Titolo Card"
-                subtitle="SECTION"
-                description="Testo Testo Testo Testo Testo Testo Testo Testo"
+                title="Qualità Editoriale"
+                subtitle="VALORE"
+                description="Contenuti di valore pensati per la community di Next Leader e Forbes Italia."
                 colorIcon="var(--secondary-pink)"
               />,
 
               <AtomicCard
                 key="card-3"
-                title="Titolo Card"
-                subtitle="SECTION"
-                description="Testo Testo Testo Testo Testo Testo Testo Testo"
+                title="Coerenza del Brand"
+                subtitle="IMMAGINE"
+                description="Unʼimmagine professionale e riconoscibile in tutta Italia."
                 colorIcon="var(--tertiary-blue)"
               />,
 
               <AtomicCard
                 key="card-4"
-                title="Titolo Card"
-                subtitle="SECTION"
-                description="Testo Testo Testo Testo Testo Testo Testo Testo "
+                title="Standard Elevati"
+                subtitle="ESPERIENZA"
+                description="Un'esperienza curata in ogni dettaglio, dalla selezione dei relatori alla gestione dell'incontro."
                 colorIcon="var(--tertiary-blue)"
               />,
             ]}
