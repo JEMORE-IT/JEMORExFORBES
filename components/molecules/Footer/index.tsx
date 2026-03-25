@@ -33,17 +33,17 @@ const Footer: FC<FooterProps> = () => {
           <div className="flex flex-col items-center space-y-6">
             <Subtitle content="QUICK LINKS" />
             <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
-              <Link href="#" className="hover:text-white">
+              <Link href="https://jemore.it" className="hover:text-white">
                 Jemore
               </Link>
-              <Link href="#" className="hover:text-white">
+              <Link href="https://www.forbes.com" className="hover:text-white">
                 Forbes
               </Link>
-              <Link href="#" className="hover:text-white">
+              <Link href="/programma" className="hover:text-white">
                 ODG
               </Link>
               <Link href="#" className="hover:text-white">
-                info
+                Info
               </Link>
             </nav>
           </div>
