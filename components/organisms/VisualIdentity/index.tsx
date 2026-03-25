@@ -22,7 +22,7 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             key="card-1"
             title="Next Leaders x JEMORE"
             subtitle="IL FORMAT"
-            description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leader e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
+            description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leaders e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
             immagine="/images/typography.png"
             colorIcon="var(--primary-yellow)"
           />
@@ -35,7 +35,7 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
                 key="card-2"
                 title="Qualità Editoriale"
                 subtitle="VALORE"
-                description="Contenuti di valore pensati per la community di Next Leader e Forbes Italia."
+                description="Contenuti di valore pensati per la community di Next Leaders e Forbes Italia."
                 colorIcon="var(--secondary-pink)"
               />,
 

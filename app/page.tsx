@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-[15vh] overflow-x-hidden pb-[20vh] pt-[15vh] md:gap-[30vh]">
+    <div className="flex flex-col gap-[15vh] overflow-x-hidden pb-[20vh] md:gap-[30vh]">
       <ScrollFadeIn>
         <Hero />
       </ScrollFadeIn>

@@ -43,7 +43,10 @@ const TicketSection: React.FC<TicketSectionProps> = () => {
             />
           </div>
 
-          <div className="flex-1">
+          {
+            /*
+            Card rimossa su richiesta. Se serve, si può riaggiungere in futuro.
+            <div className="flex-1">
             <CompositIcon
               icon="users"
               colorIcon="var(--tertiary-blue)"
@@ -51,6 +54,8 @@ const TicketSection: React.FC<TicketSectionProps> = () => {
               subtitle="120 Persone"
             />
           </div>
+            */
+          }
         </div>
       </div>
 

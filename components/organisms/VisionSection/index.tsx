@@ -39,14 +39,6 @@ const VisionSection: React.FC<VisionSectionProps> = () => {
               />,
 
               <AtomicCard
-                key="card-3"
-                title="Speaker Under 40"
-                subtitle="INSIGHT"
-                description="Condividono insight autentici su leadership, innovazione e crescita professionale."
-                colorIcon="var(--tertiary-blue)"
-              />,
-
-              <AtomicCard
                 key="card-4"
                 title="La Community"
                 subtitle="ISPIRAZIONE"

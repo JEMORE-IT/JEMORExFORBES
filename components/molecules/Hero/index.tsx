@@ -7,11 +7,10 @@ import HeroProps from './index.types';
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className="px-4 py-4 text-center">
-      <div className="container mx-auto mb-20 flex flex-col items-center">
-        <div className="relative mx-auto aspect-[9/16] w-full max-w-4xl md:aspect-[16/9]">
+    <section className="text-center">
+      <div className="flex flex-col items-center">
+        <div className="relative mt-20 h-[calc(100vh-5rem)] w-screen">
           {/* Mobile Image */}
-
           <Image
             src="/images/HeroMobile.svg"
             alt="Hero"
@@ -29,28 +28,18 @@ const Hero: React.FC<HeroProps> = () => {
           />
         </div>
 
-        <div className="mt-12 flex w-full max-w-4xl flex-row items-center justify-center gap-4 md:gap-24">
-          <div className="flex flex-col items-center gap-2">
-            <Subtitle
-              content="MODENA"
-              style={{ color: 'var(--secondary-pink)' }}
-            />
-            <span className="text-sm font-light tracking-widest text-white/80">
-              44.6471°N 10.9252°E
-            </span>
-          </div>
-
-          <div className="h-10 w-px bg-white/30"></div>
-
-          <div className="flex flex-col items-center gap-2">
-            <Subtitle
-              content="REGGIO EMILIA"
-              style={{ color: 'var(--primary-yellow)' }}
-            />
-            <span className="text-sm font-light tracking-widest text-white/80">
-              44.6989°N 10.6310°E
-            </span>
-          </div>
+        <div className="mt-16 flex flex-col items-center gap-3">
+          <Subtitle
+            content="REGGIO EMILIA"
+            style={{
+              color: 'var(--primary-yellow)',
+              fontSize: '2rem',
+              letterSpacing: '0.3em',
+            }}
+          />
+          <span className="text-base font-light tracking-[0.3em] text-white/80">
+            44.6989°N 10.6310°E
+          </span>
         </div>
       </div>
     </section>
