@@ -46,14 +46,11 @@ const Footer: FC<FooterProps> = () => {
               <Link href="https://jemore.it" className="hover:text-white">
                 Jemore
               </Link>
-              <Link href="https://www.forbes.com" className="hover:text-white">
+              <Link href="https://nextleaders.forbes.it" className="hover:text-white">
                 Forbes
               </Link>
               <Link href="/programma" className="hover:text-white">
-                ODG
-              </Link>
-              <Link href="#" className="hover:text-white">
-                Info
+                Programma
               </Link>
             </nav>
           </div>
