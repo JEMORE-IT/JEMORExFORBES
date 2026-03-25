@@ -10,44 +10,72 @@ export const metadata: Metadata = {
 const mockEvents = [
   {
     time: '09:00',
-    title: 'Check-in & Welcome Breakfast',
+    title: 'Accoglienza e accreditamento',
     description:
-      "Accoglienza dei partecipanti, registrazione e colazione di benvenuto per fare rete prima dell'inizio.",
-    color: 'var(--primary-yellow)',
-  },
-  {
-    time: '10:00',
-    title: 'Opening Ceremony',
-    description:
-      "Saluti istituzionali e presentazione ufficiale dell'evento e degli ospiti d'eccezione.",
+      'Accoglienza dei partecipanti, registrazione e accreditamento.',
     color: 'var(--secondary-pink)',
   },
   {
-    time: '11:30',
-    title: "Panel Discussion: Il Futuro dell'Innovazione",
+    time: '10:00',
+    title: 'Cerimonia di apertura',
     description:
-      'Esperti del settore discutono su tematiche chiave. Interventi interattivi con il pubblico.',
-    color: 'var(--tertiary-blue)',
+      "Saluti istituzionali e presentazione ufficiale dell'evento.",
+    color: 'var(--secondary-pink)',
   },
   {
-    time: '13:00',
-    title: 'Networking Lunch',
+    time: '10:30',
+    title: 'Prima parte Speech',
     description:
-      'Pausa pranzo a buffet con possibilità di confronto diretto con i relatori e gli altri partecipanti.',
-    color: 'var(--tertiary-gray)',
-  },
-  {
-    time: '14:30',
-    title: 'Workshop Paralleli',
-    description:
-      'Sessioni pratiche su vari tavoli tematici. Scegli il percorso più adatto ai tuoi interessi.',
+      'Interventi e presentazioni della prima sessione di speech.',
     color: 'var(--primary-yellow)',
   },
   {
-    time: '16:00',
-    title: 'Closing Remarks & Aperitivo',
+    time: '11:00',
+    title: 'Coffee Break',
     description:
-      'Conclusioni della giornata, ringraziamenti finali e aperitivo di chiusura per festeggiare insieme.',
+      'Pausa caffè per ricaricare le energie e fare networking informale.',
+    color: 'var(--tertiary-gray)',
+  },
+  {
+    time: '11:15',
+    title: 'Seconda parte Speech e Tavola Rotonda',
+    description:
+      'Proseguimento degli interventi con tavola rotonda e confronto tra relatori.',
+    color: 'var(--primary-yellow)',
+  },
+  {
+    time: '13:30',
+    title: 'Pranzo',
+    description:
+      'Pausa pranzo con possibilità di networking tra i partecipanti.',
+    color: 'var(--tertiary-gray)',
+  },
+  {
+    time: '15:00',
+    title: 'Primo turno Attività',
+    description:
+      'Business Game, Masterclass e Company Fair.',
+    color: 'var(--tertiary-blue)',
+  },
+  {
+    time: '16:30',
+    title: 'Coffee Break',
+    description:
+      'Pausa caffè prima del secondo turno di attività.',
+    color: 'var(--tertiary-gray)',
+  },
+  {
+    time: '16:45',
+    title: 'Secondo turno Attività',
+    description:
+      'Business Game, Masterclass e Company Fair.',
+    color: 'var(--tertiary-blue)',
+  },
+  {
+    time: '18:15',
+    title: 'Cerimonia di chiusura',
+    description:
+      'Conclusioni della giornata e ringraziamenti finali.',
     color: 'var(--secondary-pink)',
   },
 ];
