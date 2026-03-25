@@ -7,6 +7,7 @@ import ScrollExpandIn from '../components/molecules/ScrollExpandIn';
 import ScrollFadeIn from '../components/molecules/ScrollFadeIn';
 import CardSection from '../components/organisms/CardSection';
 import TicketSection from '../components/organisms/TicketSection';
+import VisionSection from '../components/organisms/VisionSection';
 import VisualSection from '../components/organisms/VisualIdentity';
 
 export const metadata: Metadata = {
@@ -50,6 +51,10 @@ export default function Home() {
             layout="center"
           />
         </div>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <VisionSection />
       </ScrollFadeIn>
 
       <ScrollExpandIn delay={0.3}>
