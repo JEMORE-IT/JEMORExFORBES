@@ -35,6 +35,7 @@ const Hero: React.FC<HeroProps> = () => {
               color: 'var(--primary-yellow)',
               fontSize: '2rem',
               letterSpacing: '0.3em',
+              lineHeight: '1.4',
             }}
           />
           <span className="text-base font-light tracking-[0.3em] text-white/80">

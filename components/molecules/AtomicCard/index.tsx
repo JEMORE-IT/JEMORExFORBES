@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import dynamicIconImports from 'lucide-react/dynamicIconImports';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
 import {
@@ -20,12 +18,10 @@ export function AtomicCard({
   subtitle,
   description,
   immagine,
-  iconName,
   colorIcon,
   className,
 }: AtomicCardProps) {
   const brandColor = colorIcon || 'var(--primary-yellow)';
-  const Icon = iconName ? dynamic(dynamicIconImports[iconName]) : null;
 
   return (
     <motion.div
@@ -56,21 +52,10 @@ export function AtomicCard({
 
         {/* Padding adattivo: p-4 su mobile, p-6 su desktop */}
         <CardHeader className="flex-none space-y-3 p-4 text-left md:p-6">
-          {Icon && (
-            <div className="flex flex-col gap-2 md:gap-3">
-              <Icon
-                size={20}
-                className="md:h-6 md:w-6"
-                strokeWidth={1.5}
-                color={brandColor}
-              />
-              <div
-                className="h-1 w-6 rounded-full md:h-1.5 md:w-8"
-                style={{ backgroundColor: brandColor }}
-              />
-            </div>
-          )}
-
+          <div
+            className="h-1 w-6 rounded-full md:h-1.5 md:w-8"
+            style={{ backgroundColor: brandColor }}
+          />
           <div className="space-y-1">
             {subtitle && (
               <span

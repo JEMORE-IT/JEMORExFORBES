@@ -40,10 +40,10 @@ const VisionSection: React.FC<VisionSectionProps> = () => {
 
               <AtomicCard
                 key="card-4"
-                title="La Community"
+                title="Community"
                 subtitle="ISPIRAZIONE"
                 description="Genera contenuti editoriali capaci di ispirare la nuova generazione di professionisti italiani."
-                colorIcon="var(--tertiary-blue)"
+                colorIcon="var(--primary-yellow)"
               />,
             ]}
           </CardGrid>

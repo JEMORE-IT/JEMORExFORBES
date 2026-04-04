@@ -10,19 +10,17 @@ import TimelineSectionProps from './index.types';
 const TimelineSection: React.FC<TimelineSectionProps> = ({ events }) => {
   return (
     <section className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center px-6 pb-32 pt-0">
-      <div className="mb-20 text-center">
+      <div className="mb-20 flex flex-col items-center text-center">
         <TitleC
-          sottotitolo="THE PROGRAM"
           colored="Timeline"
-          color="var(--tertiary-blue)"
+          color="var(--primary-yellow)"
           layout="center"
         >
-          Event Timeline
+          Timeline
         </TitleC>
         <p className="mt-4 max-w-2xl text-center font-opensans text-white/70">
-          Scopri le attività previste per la giornata, dal check-in
-          all&apos;aperitivo finale. Il programma potrebbe subire leggere
-          variazioni.
+          Scopri le attività della giornata. Il programma potrebbe subire
+          leggere variazioni.
         </p>
       </div>
 

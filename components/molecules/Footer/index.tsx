@@ -24,7 +24,7 @@ const Footer: FC<FooterProps> = () => {
             />
           </Link>
           <p className="mt-4 max-w-xs text-center text-xs leading-relaxed text-tertiary-gray md:text-left">
-            © 2026 Journey Event. A Forbes x Italian Universities Collaboration
+            © 2026 JournEy. JEMORE x Next Leaders powered by Forbes Italia
           </p>
         </div>
 
@@ -34,10 +34,13 @@ const Footer: FC<FooterProps> = () => {
             <Subtitle content="QUICK LINKS" />
             <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
               <Link href="https://jemore.it" className="hover:text-white">
-                Jemore
+                JEMORE
               </Link>
-              <Link href="https://nextleaders.forbes.it" className="hover:text-white">
-                Forbes
+              <Link
+                href="https://nextleaders.forbes.it"
+                className="hover:text-white"
+              >
+                Next Leaders
               </Link>
               <Link href="/programma" className="hover:text-white">
                 Programma
