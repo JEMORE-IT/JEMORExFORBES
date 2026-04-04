@@ -60,7 +60,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <section className="mx-auto flex max-w-6xl flex-col items-center justify-center px-6 py-10">
+    <section className="mx-auto flex max-w-6xl flex-col items-center justify-center px-6 py-2">
       <TitleC
         sottotitolo="TIMING"
         colored="inizia"
