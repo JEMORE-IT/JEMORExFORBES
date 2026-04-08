@@ -19,6 +19,7 @@ const Header: FC<HeaderProps> = () => {
     href: item.href,
     text: item.text,
     active: pathname === item.href,
+    external: 'external' in item ? item.external : false,
   }));
 
   return (
