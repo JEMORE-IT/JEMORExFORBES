@@ -1,7 +1,7 @@
-import { Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 import Subtitle from '../../../components/atoms/Subtitle';
 import { websiteConfig } from '../../../website.config';
