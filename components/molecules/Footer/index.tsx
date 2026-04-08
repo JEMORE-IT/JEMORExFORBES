@@ -33,11 +33,13 @@ const Footer: FC<FooterProps> = () => {
           <div className="flex flex-col items-center space-y-6">
             <Subtitle content="QUICK LINKS" />
             <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
-              <Link href="https://jemore.it" className="hover:text-white">
+              <Link href="https://jemore.it" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                 JEMORE
               </Link>
               <Link
                 href="https://nextleaders.forbes.it"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-white"
               >
                 Next Leaders
@@ -56,12 +58,16 @@ const Footer: FC<FooterProps> = () => {
             <div className="flex space-x-4">
               <Link
                 href="https://instagram.com/jemore_consulting"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Instagram size={24} />
               </Link>
               <Link
                 href="https://it.linkedin.com/company/jemore"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Linkedin size={24} />
