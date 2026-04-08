@@ -9,17 +9,17 @@ const font_variables = Object.values(fonts).map(
 );
 
 export const websiteConfig = {
-  logo_img: '/images/logo.svg',
+  logo_img: '/images/logo_recolored.svg',
   menuItems: [
-    { text: 'HomePage', href: '/' },
-    { text: 'Next Leaders', href: 'https://nextleaders.forbes.it/' },
+    { text: 'Home', href: '/' },
+    { text: 'Next Leaders', href: 'https://nextleaders.forbes.it/', external: true },
     { text: 'Programma', href: '/programma' },
-    { text: 'Partner', href: '/partner' },
-    { text: 'Contatti', href: '/contatti' },
+    { text: 'Location', href: '/location' },
+    //{ text: 'Partner', href: '/partner' },
   ],
   title: 'Evento JournEy',
   description:
-    'template di base per siti web JEMORE, con configurazione di base, header, footer e navigazione.',
+    'JEMORE x Next Leaders powered by Forbes Italia',
   font_variables: font_variables,
   color_themes: ['system', 'jemore-theme-light', 'jemore-theme-dark'],
 };

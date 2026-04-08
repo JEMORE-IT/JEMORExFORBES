@@ -6,12 +6,12 @@ import VisualSectionProps from './index.types';
 
 const VisualSection: React.FC<VisualSectionProps> = () => {
   return (
-    <section className="mx-auto flex max-w-6xl flex-col items-start justify-center px-8 py-2">
+    <section className="mx-auto flex max-w-6xl flex-col items-center justify-center px-8 py-2">
       <TitleC
         sottotitolo="IL FORMAT"
         colored="Nazionale"
         color="var(--secondary-pink)"
-        layout="left"
+        layout="center"
       >
         Un Framework Nazionale
       </TitleC>
@@ -22,7 +22,7 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             key="card-1"
             title="Next Leaders x JEMORE"
             subtitle="IL FORMAT"
-            description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leader e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
+            description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leaders e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
             immagine="/images/typography.png"
             colorIcon="var(--primary-yellow)"
           />
@@ -32,27 +32,19 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
           <CardGrid columns={2} fillRow={true}>
             {[
               <AtomicCard
-                key="card-2"
-                title="Qualità Editoriale"
-                subtitle="VALORE"
-                description="Contenuti di valore pensati per la community di Next Leader e Forbes Italia."
+                key="v-card-2"
+                title="Studenti"
+                subtitle="FORMAZIONE"
+                description="Acquisiscono le competenze chiave per affrontare le carriere di domani."
                 colorIcon="var(--secondary-pink)"
               />,
 
               <AtomicCard
-                key="card-3"
-                title="Coerenza del Brand"
-                subtitle="IMMAGINE"
-                description="Unʼimmagine professionale e riconoscibile in tutta Italia."
-                colorIcon="var(--tertiary-blue)"
-              />,
-
-              <AtomicCard
-                key="card-4"
-                title="Standard Elevati"
-                subtitle="ESPERIENZA"
-                description="Un'esperienza curata in ogni dettaglio, dalla selezione dei relatori alla gestione dell'incontro."
-                colorIcon="var(--tertiary-blue)"
+                key="v-card-4"
+                title="Community"
+                subtitle="ISPIRAZIONE"
+                description="Genera contenuti editoriali capaci di ispirare la nuova generazione di professionisti italiani."
+                colorIcon="var(--primary-yellow)"
               />,
             ]}
           </CardGrid>

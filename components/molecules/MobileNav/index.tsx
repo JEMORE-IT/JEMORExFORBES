@@ -59,6 +59,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
                 key={route.text}
                 href={route.href}
                 onClick={() => setOpen(false)}
+                {...(route.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className={cn(
                   'rounded-md px-3 py-2 text-base font-bold transition-colors hover:text-secondary-pink',
                   route.active

@@ -6,59 +6,41 @@ import TicketSectionProps from './index.types';
 
 const TicketSection: React.FC<TicketSectionProps> = () => {
   return (
-    <section className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-y-12 px-6 py-10">
-      <div className="md: mt-20 flex flex-col items-center justify-center">
+    <section className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-y-6 px-6 py-2">
+      <div className="mt-4 flex flex-col items-center justify-center md:mt-4">
         <TitleC
-          sottotitolo="Join the Journey"
-          colored="Biglietti"
+          sottotitolo="Il tuo viaggio inizia qui"
+          colored="Ticket"
           color="var(--secondary-pink)"
           layout="center"
         >
-          Prendi i Tuoi Biglietti
+          Acquista il Ticket
         </TitleC>
-
-        <p className="px-6 py-4 text-center text-xs leading-relaxed text-tertiary-gray md:text-sm">
-          Secure your place at this landmark collaboration between Forbes and
-          Italy&apos;s leading universities.
-        </p>
       </div>
 
-      <div className="mx-auto w-full max-w-6xl border-y border-white/25">
-        <div className="mx-auto flex w-full max-w-5xl flex-col md:flex-row">
-          <div className="flex-1">
+      <div className="mx-auto w-full max-w-4xl border-y border-white/25">
+        <div className="mx-auto flex w-full flex-col items-start justify-around py-2 md:flex-row md:items-center">
+          <div className="flex flex-1 justify-center">
             <CompositIcon
               icon="calendar"
               colorIcon="var(--secondary-pink)"
               title="DATE"
-              subtitle="March 15–16, 2026"
+              subtitle="16 Maggio 2026"
             />
           </div>
 
-          <div className="flex-1">
+          <div className="flex flex-1 justify-center">
             <CompositIcon
               icon="map"
               colorIcon="var(--primary-yellow)"
               title="LOCATION"
-              subtitle="Parco innovazione Reggio Emilia"
-            />
-          </div>
-
-          <div className="flex-1">
-            <CompositIcon
-              icon="users"
-              colorIcon="var(--tertiary-blue)"
-              title="CAPIENZA"
-              subtitle="120 Persone"
+              subtitle="Capannone 15C Reggiane Parco Innovazione, Reggio Emilia"
             />
           </div>
         </div>
       </div>
 
-      <p className="px-6 py-2 text-center text-sm leading-relaxed text-tertiary-gray md:text-lg">
-        Affrettati a prendere i tuoi biglietti prima che finiscano!
-      </p>
-
-      <div className="scale-125 transform">
+      <div className="mb-6 mt-8 scale-125 transform md:mb-10 md:mt-12">
         <ButtonTicket
           href="/"
           fill="var(--primary-yellow)"

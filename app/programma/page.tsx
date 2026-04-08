@@ -3,51 +3,71 @@ import { Metadata } from 'next';
 import TimelineSection from '../../components/organisms/TimelineSection';
 
 export const metadata: Metadata = {
-  title: 'Programma | JEMORExFORBES',
-  description: "Scopri il programma e la timeline dell'evento JEMORE x FORBES.",
+  title: 'Programma | JournEy 2026',
+  description: "Scopri il programma e la timeline dell'evento JournEy 2026.",
 };
 
 const mockEvents = [
   {
-    time: '09:00',
-    title: 'Check-in & Welcome Breakfast',
-    description:
-      "Accoglienza dei partecipanti, registrazione e colazione di benvenuto per fare rete prima dell'inizio.",
-    color: 'var(--primary-yellow)',
-  },
-  {
-    time: '10:00',
-    title: 'Opening Ceremony',
-    description:
-      "Saluti istituzionali e presentazione ufficiale dell'evento e degli ospiti d'eccezione.",
+    time: '08:30',
+    title: 'Accoglienza',
+    description: 'Accoglienza e Check-in.',
     color: 'var(--secondary-pink)',
   },
   {
-    time: '11:30',
-    title: "Panel Discussion: Il Futuro dell'Innovazione",
-    description:
-      'Esperti del settore discutono su tematiche chiave. Interventi interattivi con il pubblico.',
-    color: 'var(--tertiary-blue)',
+    time: '10:00',
+    title: 'Cerimonia di apertura',
+    description: "Saluti istituzionali e presentazione ufficiale dell'evento.",
+    color: 'var(--secondary-pink)',
   },
   {
-    time: '13:00',
-    title: 'Networking Lunch',
-    description:
-      'Pausa pranzo a buffet con possibilità di confronto diretto con i relatori e gli altri partecipanti.',
-    color: 'var(--tertiary-gray)',
-  },
-  {
-    time: '14:30',
-    title: 'Workshop Paralleli',
-    description:
-      'Sessioni pratiche su vari tavoli tematici. Scegli il percorso più adatto ai tuoi interessi.',
+    time: '10:30',
+    title: 'Prima parte Speech',
+    description: 'Interventi e presentazioni della prima sessione di speech.',
     color: 'var(--primary-yellow)',
   },
   {
-    time: '16:00',
-    title: 'Closing Remarks & Aperitivo',
+    time: '11:00',
+    title: 'Coffee Break',
     description:
-      'Conclusioni della giornata, ringraziamenti finali e aperitivo di chiusura per festeggiare insieme.',
+      'Pausa caffè per ricaricare le energie e fare networking informale.',
+    color: 'var(--tertiary-gray)',
+  },
+  {
+    time: '11:15',
+    title: 'Seconda parte Speech e Tavola Rotonda',
+    description:
+      'Proseguimento degli interventi e momento di confronto con i partecipanti.',
+    color: 'var(--primary-yellow)',
+  },
+  {
+    time: '13:30',
+    title: 'Pranzo',
+    description: 'Pausa pranzo e Networking.',
+    color: 'var(--tertiary-gray)',
+  },
+  {
+    time: '15:00',
+    title: 'Primo turno Attività',
+    description: 'Business Game, Masterclass e Company Fair.',
+    color: 'var(--tertiary-blue)',
+  },
+  {
+    time: '16:30',
+    title: 'Coffee Break',
+    description: 'Pausa caffè prima del secondo turno di attività.',
+    color: 'var(--tertiary-gray)',
+  },
+  {
+    time: '16:45',
+    title: 'Secondo turno Attività',
+    description: 'Business Game, Masterclass e Company Fair.',
+    color: 'var(--tertiary-blue)',
+  },
+  {
+    time: '18:15',
+    title: 'Cerimonia di chiusura',
+    description: 'Conclusioni della giornata e ringraziamenti finali.',
     color: 'var(--secondary-pink)',
   },
 ];

@@ -1,7 +1,7 @@
-import { Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 import Subtitle from '../../../components/atoms/Subtitle';
 import { websiteConfig } from '../../../website.config';
@@ -24,7 +24,7 @@ const Footer: FC<FooterProps> = () => {
             />
           </Link>
           <p className="mt-4 max-w-xs text-center text-xs leading-relaxed text-tertiary-gray md:text-left">
-            © 2026 Journey Event. A Forbes x Italian Universities Collaboration
+            © 2026 JournEy. JEMORE x Next Leaders powered by Forbes Italia
           </p>
         </div>
 
@@ -33,17 +33,19 @@ const Footer: FC<FooterProps> = () => {
           <div className="flex flex-col items-center space-y-6">
             <Subtitle content="QUICK LINKS" />
             <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
-              <Link href="#" className="hover:text-white">
-                Jemore
+              <Link href="https://jemore.it" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                JEMORE
               </Link>
-              <Link href="#" className="hover:text-white">
-                Forbes
+              <Link
+                href="https://nextleaders.forbes.it"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
+                Next Leaders
               </Link>
-              <Link href="#" className="hover:text-white">
-                ODG
-              </Link>
-              <Link href="#" className="hover:text-white">
-                info
+              <Link href="/programma" className="hover:text-white">
+                Programma
               </Link>
             </nav>
           </div>
@@ -55,22 +57,26 @@ const Footer: FC<FooterProps> = () => {
             <Subtitle content="CONTATTI" />
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://instagram.com/jemore_consulting"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Instagram size={24} />
               </Link>
               <Link
-                href="#"
+                href="https://it.linkedin.com/company/jemore"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Linkedin size={24} />
               </Link>
               <Link
-                href="#"
+                href="mailto:board@jemore.it"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
-                <Twitter size={24} />
+                <Mail size={24} />
               </Link>
             </div>
           </div>
