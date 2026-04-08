@@ -18,7 +18,7 @@ export const websiteConfig = {
   ],
   title: 'Evento JournEy',
   description:
-    '',
+    'JEMORE x Next Leaders powered by Forbes Italia',
   font_variables: font_variables,
   color_themes: ['system', 'jemore-theme-light', 'jemore-theme-dark'],
 };

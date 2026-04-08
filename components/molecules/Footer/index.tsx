@@ -55,22 +55,16 @@ const Footer: FC<FooterProps> = () => {
             <Subtitle content="CONTATTI" />
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://instagram.com/jemore_consulting"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Instagram size={24} />
               </Link>
               <Link
-                href="#"
+                href="https://it.linkedin.com/company/jemore"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Linkedin size={24} />
-              </Link>
-              <Link
-                href="#"
-                className="text-secondary-pink transition-colors hover:opacity-80"
-              >
-                <Twitter size={24} />
               </Link>
             </div>
           </div>

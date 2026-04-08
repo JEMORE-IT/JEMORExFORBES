@@ -38,8 +38,8 @@ export default function Home() {
       {
         /*
         <ScrollFadeIn>
-        <SpeakerSection />
-      </ScrollFadeIn>
+          <SpeakerSection />
+        </ScrollFadeIn>
         */
       }
 
