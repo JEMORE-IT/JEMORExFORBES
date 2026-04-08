@@ -35,9 +35,13 @@ export default function Home() {
         <VisualSection />
       </ScrollFadeIn>
 
-      <ScrollFadeIn>
+      {
+        /*
+        <ScrollFadeIn>
         <SpeakerSection />
       </ScrollFadeIn>
+        */
+      }
 
       <ScrollFadeIn>
         <div className="flex min-h-[8vh] items-center justify-center px-4 md:min-h-[8vh]">
