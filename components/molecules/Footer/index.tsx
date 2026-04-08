@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { FC } from 'react';
@@ -65,6 +65,12 @@ const Footer: FC<FooterProps> = () => {
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Linkedin size={24} />
+              </Link>
+              <Link
+                href="mailto:board@jemore.it"
+                className="text-secondary-pink transition-colors hover:opacity-80"
+              >
+                <Mail size={24} />
               </Link>
             </div>
           </div>
