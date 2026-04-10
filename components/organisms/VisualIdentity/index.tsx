@@ -24,6 +24,7 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             subtitle="IL FORMAT"
             description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leaders e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
             immagine="/images/typography.png"
+            logo="/images/nextleaders-logo.png"
             colorIcon="var(--primary-yellow)"
           />
         </div>

@@ -5,4 +5,5 @@ export default interface AtomicCardProps {
   immagine?: string;
   colorIcon?: string;
   className?: string;
+  logo?: string;
 }

@@ -20,6 +20,7 @@ export function AtomicCard({
   immagine,
   colorIcon,
   className,
+  logo,
 }: AtomicCardProps) {
   const brandColor = colorIcon || 'var(--primary-yellow)';
 
@@ -56,19 +57,30 @@ export function AtomicCard({
             className="h-1 w-6 rounded-full md:h-1.5 md:w-8"
             style={{ backgroundColor: brandColor }}
           />
-          <div className="space-y-1">
-            {subtitle && (
-              <span
-                className="block text-[9px] font-bold uppercase tracking-[0.2em] md:text-[10px] md:tracking-[0.3em]"
-                style={{ color: brandColor }}
-              >
-                {subtitle}
-              </span>
-            )}
-            {title && (
-              <CardTitle className="text-lg font-bold tracking-tight md:text-xl lg:text-2xl">
-                {title}
-              </CardTitle>
+          <div className="flex items-start justify-between">
+            <div className="space-y-1">
+              {subtitle && (
+                <span
+                  className="block text-[9px] font-bold uppercase tracking-[0.2em] md:text-[10px] md:tracking-[0.3em]"
+                  style={{ color: brandColor }}
+                >
+                  {subtitle}
+                </span>
+              )}
+              {title && (
+                <CardTitle className="text-lg font-bold tracking-tight md:text-xl lg:text-2xl">
+                  {title}
+                </CardTitle>
+              )}
+            </div>
+            {logo && (
+              <Image
+                src={logo}
+                alt="Logo"
+                width={80}
+                height={80}
+                className="ml-3 shrink-0 object-contain"
+              />
             )}
           </div>
         </CardHeader>
