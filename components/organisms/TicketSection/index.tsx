@@ -42,7 +42,7 @@ const TicketSection: React.FC<TicketSectionProps> = () => {
 
       <div className="mb-6 mt-8 scale-125 transform md:mb-10 md:mt-12">
         <ButtonTicket
-          href="/"
+          href="https://www.gomry.com/event/O4egFY4BQVpPNL6W1QGh"
           fill="var(--primary-yellow)"
           shadow="var(--secondary-pink)"
           textColor="var(--tertiary-blue)"

@@ -59,7 +59,9 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
                 key={route.text}
                 href={route.href}
                 onClick={() => setOpen(false)}
-                {...(route.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                {...(route.external
+                  ? { target: '_blank', rel: 'noopener noreferrer' }
+                  : {})}
                 className={cn(
                   'rounded-md px-3 py-2 text-base font-bold transition-colors hover:text-secondary-pink',
                   route.active
@@ -71,7 +73,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
               </Link>
             ))}
             <ButtonTicket
-              href="/"
+              href="https://www.gomry.com/event/O4egFY4BQVpPNL6W1QGh"
               fill="var(--primary-yellow)"
               shadow="var(--secondary-pink)"
               textColor="var(--tertiary-blue)"
