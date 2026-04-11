@@ -38,7 +38,7 @@ export function AtomicCard({
       >
         {/* Immagine Responsive: altezza variabile in base allo schermo */}
         {immagine && (
-          <div className="relative h-2/3 w-full overflow-hidden">
+          <div className="relative h-48 w-full overflow-hidden">
             <Image
               src={immagine}
               alt={title || 'Card image'}
