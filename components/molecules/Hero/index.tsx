@@ -9,10 +9,10 @@ const Hero: React.FC<HeroProps> = () => {
   return (
     <section className="text-center">
       <div className="flex flex-col items-center">
-        <div className="relative mt-20 h-[calc(100vh-5rem)] w-screen">
+        <div className="relative mt-20 h-[calc(100vh-2rem)] w-screen">
           {/* Mobile Image */}
           <Image
-            src="/images/HeroMobile.svg"
+            src="/images/hero_mobile.png"
             alt="Hero"
             fill
             className="object-cover md:hidden"
@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = () => {
           />
           {/* Desktop Image */}
           <Image
-            src="/images/hero_image.svg"
+            src="/images/hero_image.png"
             alt="Hero"
             fill
             className="hidden object-cover md:block"
@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = () => {
             }}
           />
           <span className="text-base font-light tracking-[0.3em] text-white/80">
-            44.6989°N 10.6310°E
+            44.6979°N 10.6468°E
           </span>
         </div>
       </div>

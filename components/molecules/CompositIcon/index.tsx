@@ -36,7 +36,7 @@ const CompositIcon: FC<CompositIconProps> = ({
       {/* Text */}
       <div className="flex flex-col gap-1">
         <Subtitle content={title} />
-        <span className="text-sm font-medium text-tertiary-gray">
+        <span className="text-sm w-8 font-medium text-tertiary-gray">
           {subtitle}
         </span>
       </div>
