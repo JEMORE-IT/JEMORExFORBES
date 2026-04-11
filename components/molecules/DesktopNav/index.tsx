@@ -14,7 +14,9 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
           <Link
             key={route.text}
             href={route.href}
-            {...(route.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            {...(route.external
+              ? { target: '_blank', rel: 'noopener noreferrer' }
+              : {})}
             className={cn(
               'transition-colors hover:text-secondary-pink',
               route.active ? 'text-secondary-pink' : 'text-white'
@@ -25,7 +27,7 @@ const DesktopNav: FC<NavProps> = ({ routes }: NavProps) => {
         ))}
 
         <ButtonTicket
-          href="/"
+          href="https://www.gomry.com/event/O4egFY4BQVpPNL6W1QGh"
           fill="var(--primary-yellow)"
           shadow="var(--secondary-pink)"
           textColor="var(--tertiary-blue)"

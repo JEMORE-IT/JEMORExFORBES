@@ -33,7 +33,12 @@ const Footer: FC<FooterProps> = () => {
           <div className="flex flex-col items-center space-y-6">
             <Subtitle content="QUICK LINKS" />
             <nav className="flex flex-col space-y-2 text-center text-sm text-tertiary-gray">
-              <Link href="https://jemore.it" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <Link
+                href="https://jemore.it"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white"
+              >
                 JEMORE
               </Link>
               <Link
@@ -73,7 +78,7 @@ const Footer: FC<FooterProps> = () => {
                 <Linkedin size={24} />
               </Link>
               <Link
-                href="mailto:board@jemore.it"
+                href="mailto:journey@jemore.it"
                 className="text-secondary-pink transition-colors hover:opacity-80"
               >
                 <Mail size={24} />
