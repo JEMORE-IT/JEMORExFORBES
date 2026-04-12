@@ -1,5 +1,4 @@
 import { AtomicCard } from '../../../components/molecules/AtomicCard';
-import { CardGrid } from '../../../components/molecules/CardGrid';
 import TitleC from '../../../components/molecules/TitleC';
 
 import VisualSectionProps from './index.types';
@@ -23,32 +22,35 @@ const VisualSection: React.FC<VisualSectionProps> = () => {
             title="Next Leaders x JEMORE"
             subtitle="IL FORMAT"
             description="E' un evento editoriale e culturale nato dalla sinergia tra Next Leaders e le associazioni studentesche. Ospitato all'interno delle principali università italiane, rappresenta un ponte strategico tra il mondo accademico e quello del lavoro. L'evento segue un framework nazionale condiviso che ne garantisce:"
-            immagine="/images/typography.png"
+            immagine="/images/next_leaders.jpg"
             colorIcon="var(--primary-yellow)"
           />
         </div>
 
-        <div>
-          <CardGrid columns={2} fillRow={true}>
-            {[
-              <AtomicCard
-                key="v-card-2"
-                title="Studenti"
-                subtitle="FORMAZIONE"
-                description="Acquisiscono le competenze chiave per affrontare le carriere di domani."
-                colorIcon="var(--secondary-pink)"
-              />,
+        <div className="flex flex-col gap-6 h-full">
+  {/* Wrap each card in a flex-1 container so they share the vertical space evenly */}
+  <div className="flex-1">
+    <AtomicCard
+      key="v-card-2"
+      title="Studenti"
+      subtitle="FORMAZIONE"
+      description="Acquisiscono le competenze chiave per affrontare le carriere di domani."
+      colorIcon="var(--secondary-pink)"
+      className="h-full" // Ensure the card itself stretches
+    />
+  </div>
 
-              <AtomicCard
-                key="v-card-4"
-                title="Community"
-                subtitle="ISPIRAZIONE"
-                description="Genera contenuti editoriali capaci di ispirare la nuova generazione di professionisti italiani."
-                colorIcon="var(--primary-yellow)"
-              />,
-            ]}
-          </CardGrid>
-        </div>
+  <div className="flex-1">
+    <AtomicCard
+      key="v-card-4"
+      title="Community"
+      subtitle="ISPIRAZIONE"
+      description="Genera contenuti editoriali capaci di ispirare la nuova generazione di professionisti italiani."
+      colorIcon="var(--primary-yellow)"
+      className="h-full"
+    />
+  </div>
+</div>
       </div>
     </section>
   );

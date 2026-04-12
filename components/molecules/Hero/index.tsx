@@ -13,17 +13,19 @@ const Hero: React.FC<HeroProps> = () => {
           {/* Mobile Image */}
           <Image
             src="/images/hero_mobile.png"
-            alt="Hero"
+            alt="Hero Mobile"
             fill
-            className="object-cover md:hidden"
+            // Modificato: xl:hidden fa scomparire l'immagine solo dopo i 1280px
+            className="object-cover xl:hidden"
             priority
           />
           {/* Desktop Image */}
           <Image
             src="/images/hero_image.png"
-            alt="Hero"
+            alt="Hero Desktop"
             fill
-            className="hidden object-cover md:block"
+            // Modificato: hidden xl:block fa apparire l'immagine solo dopo i 1280px
+            className="hidden object-cover xl:block"
             priority
           />
         </div>

@@ -31,13 +31,15 @@ function SectionIcon({
 
 export default function Location() {
   return (
-    <div className="flex flex-col items-center gap-12 px-4 pb-20 pt-28 md:gap-16 md:px-8">
+    <div className="flex flex-col items-center gap-12 px-8 pb-20 pt-28 md:gap-16 md:px-8">
+      {/* 1. LOCATION SUBTITLE */}
       <Subtitle
         content="LOCATION"
         style={{
           fontSize: '2rem',
           letterSpacing: '0.3em',
           lineHeight: '1.4',
+          textAlign: 'center', // Centrato
         }}
       />
 
@@ -55,10 +57,15 @@ export default function Location() {
             fontSize: '2rem',
             letterSpacing: '0.3em',
             lineHeight: '1.4',
+            textAlign: 'center', // Centrato
           }}
         />
-        <span className="text-base font-light tracking-[0.3em] text-white/80">
-          REGGIANE PARCO INNOVAZIONE — REGGIO EMILIA
+        {/* MODIFICA: Testo centrato, a capo su mobile, "Reggio Emilia" unito */}
+        <span className="text-center text-base font-light tracking-[0.3em] text-white/80">
+          REGGIANE PARCO INNOVAZIONE,
+          <br className="md:hidden" />
+          <span className="hidden md:inline"> </span>
+           REGGIO{'\u00A0'}EMILIA
         </span>
       </div>
 
@@ -78,32 +85,35 @@ export default function Location() {
 
       {/* Come Arrivare */}
       <section className="flex w-full max-w-4xl flex-col gap-10">
-        <Subtitle
-          content="COME ARRIVARE"
-          style={{
-            fontSize: '1.5rem',
-            letterSpacing: '0.3em',
-            lineHeight: '1.4',
-          }}
-        />
+        <div className="flex w-full justify-center">
+          <Subtitle
+            content="COME ARRIVARE"
+            style={{
+              fontSize: '1.5rem',
+              letterSpacing: '0.3em',
+              lineHeight: '1.4',
+              textAlign: 'center', // Centrato
+            }}
+          />
+        </div>
 
         {/* AUTO */}
         <div className="flex flex-col gap-4">
           <SectionIcon icon={Car} label="AUTO" />
-          <div className="space-y-3 text-sm leading-relaxed text-white/70 md:text-base">
+          {/* MODIFICA: Aggiunto text-justify */}
+          <div className="space-y-3 text-justify text-sm leading-relaxed text-white/70 md:text-base">
             <p>
               <strong className="text-white">
-                Prendi l&apos;uscita Reggio Emilia
+                Prendi l'uscita Reggio Emilia
               </strong>
-              : Uscendo dall&apos;autostrada, segui le indicazioni per Reggio
-              Emilia.
+              : Uscendo dall'autostrada, segui le indicazioni per Reggio Emilia.
             </p>
             <p>
               <strong className="text-white">
                 Segui le indicazioni per il centro città
               </strong>
-              : Dopo l&apos;uscita, segui le indicazioni per il centro città e
-              la stazione ferroviaria.
+              : Dopo l'uscita, segui le indicazioni per il centro città e la
+              stazione ferroviaria.
             </p>
             <p>
               <strong className="text-white">
@@ -119,7 +129,8 @@ export default function Location() {
         {/* TRENO REGIONALE */}
         <div className="flex flex-col gap-4">
           <SectionIcon icon={Train} label="TRENO REGIONALE" />
-          <div className="space-y-3 text-sm leading-relaxed text-white/70 md:text-base">
+          {/* MODIFICA: Aggiunto text-justify */}
+          <div className="space-y-3 text-justify text-sm leading-relaxed text-white/70 md:text-base">
             <p>
               Il Parco Innovazione si trova vicino alla stazione ferroviaria
               storica di Reggio Emilia.
@@ -132,7 +143,7 @@ export default function Location() {
               Puoi prendere un autobus di linea SETA, le linee più utili sono la{' '}
               <strong className="text-white">Linea 5</strong> e la{' '}
               <strong className="text-white">Linea 9</strong>, che collegano la
-              stazione ferroviaria con l&apos;area delle Reggiane 12.
+              stazione ferroviaria con l'area delle Reggiane 12.
             </p>
           </div>
         </div>
@@ -140,7 +151,8 @@ export default function Location() {
         {/* TRENO ALTA VELOCITÀ */}
         <div className="flex flex-col gap-4">
           <SectionIcon icon={Train} label="TRENO ALTA VELOCITÀ" />
-          <div className="space-y-3 text-sm leading-relaxed text-white/70 md:text-base">
+          {/* MODIFICA: Aggiunto text-justify */}
+          <div className="space-y-3 text-justify text-sm leading-relaxed text-white/70 md:text-base">
             <p>
               La stazione Reggio Emilia AV Mediopadana dista circa 4 km dal
               Parco Innovazione. Da lì per raggiungere la destinazione puoi
@@ -160,12 +172,12 @@ export default function Location() {
             </p>
             <p>
               <strong className="text-white">Treno</strong>: dalla stazione
-              &quot;Mediopadana AV&quot; è possibile prendere un treno alla
-              &quot;stazione Mediopadana&quot;
-              <strong className="text-white"> fuori dall&apos;AV </strong>per
-              andare alla &quot;stazione centrale di Reggio Emilia&quot;.
+              "Mediopadana AV" è possibile prendere un treno alla "stazione
+              Mediopadana"
+              <strong className="text-white"> fuori dall'AV </strong>per andare
+              alla "stazione centrale di Reggio Emilia".
             </p>
-            <p className="text-xs italic text-white/50">
+            <p className="text-xs italic text-white/50 text-left">
               *Gli autobus SETA svolgono il loro servizio fino circa alle ore
               21:00
             </p>
@@ -175,30 +187,31 @@ export default function Location() {
         {/* AEROPORTO */}
         <div className="flex flex-col gap-4">
           <SectionIcon icon={Plane} label="AEROPORTO" />
-          <div className="space-y-3 text-sm leading-relaxed text-white/70 md:text-base">
-            <p className="font-semibold tracking-wide text-white/90">
+          {/* MODIFICA: Aggiunto text-justify */}
+          <div className="space-y-3 text-justify text-sm leading-relaxed text-white/70 md:text-base">
+            <p className="font-semibold tracking-wide text-white/90 text-left">
               Per la tratta Aeroporto Marconi - Bologna Centrale:
             </p>
             <p>
               <strong className="text-white">Marconi Express</strong>: Questo
-              treno monorotaia collega direttamente l&apos;aeroporto alla
-              stazione centrale in soli 7 minuti. È veloce, frequente (un treno
-              ogni 7 minuti nelle ore di punta) e comodo.
+              treno monorotaia collega direttamente l'aeroporto alla stazione
+              centrale in soli 7 minuti. È veloce, frequente (un treno ogni 7
+              minuti nelle ore di punta) e comodo.
             </p>
             <p>
               <strong className="text-white">Aerobus BLQ</strong>: Questo
-              autobus navetta parte dall&apos;area arrivi ogni 11 minuti e
-              impiega circa 20-25 minuti per arrivare alla stazione centrale. Il
-              costo del biglietto è di 6 euro.
+              autobus navetta parte dall'area arrivi ogni 11 minuti e impiega
+              circa 20-25 minuti per arrivare alla stazione centrale. Il costo
+              del biglietto è di 6 euro.
             </p>
             <p>
               <strong className="text-white">Taxi</strong>: Puoi prendere un
-              taxi direttamente dall&apos;aeroporto. Il viaggio dura circa 15-20
+              taxi direttamente dall'aeroporto. Il viaggio dura circa 15-20
               minuti, a seconda del traffico, ed è più costoso rispetto alle
               altre opzioni.
             </p>
 
-            <p className="mt-2 font-semibold tracking-wide text-white/90">
+            <p className="mt-2 font-semibold tracking-wide text-white/90 text-left">
               Bologna Centrale - Reggio Emilia:
             </p>
             <p>
@@ -208,22 +221,21 @@ export default function Location() {
             </p>
             <p>
               <strong className="text-white">Navetta</strong>: Servizi come
-              Aerbus offrono collegamenti diretti dall&apos;aeroporto a Reggio
+              Aerbus offrono collegamenti diretti dall'aeroporto a Reggio
               Emilia. È consigliabile prenotare in anticipo.
             </p>
             <p>
               <strong className="text-white">Autobus</strong>: Alcuni servizi di
-              autobus, come GoOpti, offrono collegamenti diretti
-              dall&apos;aeroporto a Reggio Emilia. Il viaggio dura circa
-              un&apos;ora e i prezzi variano.
+              autobus, come GoOpti, offrono collegamenti diretti dall'aeroporto
+              a Reggio Emilia. Il viaggio dura circa un'ora e i prezzi variano.
             </p>
             <p>
               <strong className="text-white">Taxi</strong>: Puoi prendere un
-              taxi o noleggiare un&apos;auto. Il viaggio in auto dura circa 45
-              minuti e costa tra 110 e 140 euro.
+              taxi o noleggiare un'auto. Il viaggio in auto dura circa 45 minuti
+              e costa tra 110 e 140 euro.
             </p>
 
-            <p className="mt-2 rounded-lg border border-white/10 bg-white/5 p-4 text-sm italic text-white/80">
+            <p className="mt-2 rounded-lg border border-white/10 bg-white/5 p-4 text-sm italic text-white/80 text-left">
               <strong className="not-italic text-white">NB:</strong> È
               consigliato prendere il treno regionale per la tratta Bologna
               centrale - Reggio Emilia centrale.
@@ -234,16 +246,20 @@ export default function Location() {
 
       {/* Dove Parcheggiare */}
       <section className="flex w-full max-w-4xl flex-col gap-6">
-        <Subtitle
-          content="DOVE PARCHEGGIARE"
-          style={{
-            fontSize: '1.5rem',
-            letterSpacing: '0.3em',
-            lineHeight: '1.4',
-          }}
-        />
+        <div className="flex w-full justify-center">
+          <Subtitle
+            content="DOVE PARCHEGGIARE"
+            style={{
+              fontSize: '1.5rem',
+              letterSpacing: '0.3em',
+              lineHeight: '1.4',
+              textAlign: 'center', // Centrato
+            }}
+          />
+        </div>
 
-        <p className="text-sm leading-relaxed text-white/70 md:text-base">
+        {/* MODIFICA: Aggiunto text-justify */}
+        <p className="text-justify text-sm leading-relaxed text-white/70 md:text-base">
           <strong className="text-white">Sei in macchina?</strong> Allora puoi
           parcheggiare qui, è il parcheggio davanti alla nostra location!
         </p>

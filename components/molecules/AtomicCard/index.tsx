@@ -21,13 +21,14 @@ export function AtomicCard({
   colorIcon,
   className,
   logo,
+  imageFit = 'cover', // Keep the default behavior
 }: AtomicCardProps) {
   const brandColor = colorIcon || 'var(--primary-yellow)';
 
   return (
     <motion.div
       whileHover={{ scale: 1.05, y: -8 }}
-      whileTap={{ scale: 0.98 }} // Feedback tattile su mobile
+      whileTap={{ scale: 0.98 }}
       transition={{ type: 'spring', stiffness: 200, damping: 15 }}
       className="h-full w-full"
     >
@@ -37,21 +38,27 @@ export function AtomicCard({
           className
         )}
       >
-        {/* Immagine Responsive: altezza variabile in base allo schermo */}
-        {immagine && (
-          <div className="relative h-48 w-full overflow-hidden">
-            <Image
-              src={immagine}
-              alt={title || 'Card image'}
-              fill // Fondamentale: riempie il div 'relative'
-              className="object-cover opacity-80 transition-all duration-500 hover:scale-105 hover:opacity-100"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              priority // Carica subito l'immagine per evitare sfarfallii
-            />
-          </div>
-        )}
+       {immagine && (
+  // 1. Modificato: h-32 (o h-40) su mobile, md:h-64 su desktop.
+  // Questo riduce lo spazio verticale inutile su mobile.
+  <div className="relative w-full overflow-hidden h-40 md:h-64">
+    <Image
+      src={immagine}
+      alt={title || 'Card image'}
+      fill
+      className={cn(
+        "transition-all duration-500 hover:scale-105",
+        // 2. Questa logica fa in modo che il logo non venga MAI tagliato se è impostato su 'contain'
+        imageFit === 'contain' 
+          ? 'object-contain p-2 md:p-4' // Aggiunto un leggero padding interno per far respirare il logo
+          : 'object-cover opacity-80 hover:opacity-100'
+      )}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      priority
+    />
+  </div>
+)}
 
-        {/* Padding adattivo: p-4 su mobile, p-6 su desktop */}
         <CardHeader className="flex-none space-y-3 p-4 text-left md:p-6">
           <div
             className="h-1 w-6 rounded-full md:h-1.5 md:w-8"

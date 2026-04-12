@@ -19,26 +19,32 @@ const TicketSection: React.FC<TicketSectionProps> = () => {
       </div>
 
       <div className="mx-auto w-full max-w-4xl border-y border-white/25">
-        <div className="mx-auto flex w-full flex-col items-start justify-around py-2 md:flex-row md:items-center">
-          <div className="flex flex-1 justify-center">
-            <CompositIcon
-              icon="calendar"
-              colorIcon="var(--secondary-pink)"
-              title="DATE"
-              subtitle="16 Maggio 2026"
-            />
-          </div>
+  {/* Removed items-start from parent to let children dictate height, kept flex-col */}
+  <div className="mx-auto flex w-full flex-col justify-around py-2 md:flex-row md:items-center">
+    
+    {/* Added w-full and justify-start for mobile, keeping justify-center for desktop */}
+    <div className="flex w-full flex-1 justify-start md:justify-center">
+      <CompositIcon
+        icon="calendar"
+        colorIcon="var(--secondary-pink)"
+        title="DATE"
+        subtitle="16 Maggio 2026"
+      />
+    </div>
 
-          <div className="flex flex-1 justify-center">
-            <CompositIcon
-              icon="map"
-              colorIcon="var(--primary-yellow)"
-              title="LOCATION"
-              subtitle="Capannone 15C Reggiane Parco Innovazione, Reggio Emilia"
-            />
-          </div>
-        </div>
-      </div>
+    {/* Added w-full and justify-start for mobile */}
+    <div className="flex w-full flex-1 justify-start md:justify-center">
+      <CompositIcon
+        icon="map"
+        colorIcon="var(--primary-yellow)"
+        title="LOCATION"
+        // Inserted \u00A0 (non-breaking spaces) to force the words to stay on the same line
+        subtitle={"Capannone 15C Reggiane Parco\u00A0Innovazione, Reggio\u00A0Emilia"}
+      />
+    </div>
+    
+  </div>
+</div>
 
       <div className="mb-6 mt-8 scale-125 transform md:mb-10 md:mt-12">
         <ButtonTicket
