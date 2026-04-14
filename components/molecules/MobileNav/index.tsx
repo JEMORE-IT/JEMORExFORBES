@@ -73,7 +73,7 @@ const MobileNav: FC<NavProps> = ({ routes }: NavProps) => {
               </Link>
             ))}
             <ButtonTicket
-              href="https://www.gomry.com/event/O4egFY4BQVpPNL6W1QGh"
+              href="https://www.gomry.com/it/event/JournEy-O4egFY4BQVpPNL6W1QGh"
               fill="var(--primary-yellow)"
               shadow="var(--secondary-pink)"
               textColor="var(--tertiary-blue)"

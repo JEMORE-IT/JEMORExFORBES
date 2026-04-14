@@ -89,11 +89,13 @@ const Footer: FC<FooterProps> = () => {
       </div>
 
       {/* Privacy Policy absolute bottom right or mostly aligned */}
-      <div className="container mx-auto mt-12 px-8 text-center md:text-right">
-        <Link href="#" className="text-xs text-tertiary-gray hover:text-white">
-          Privacy policy
-        </Link>
-      </div>
+      {/*
+       <div className="container mx-auto mt-12 px-8 text-center md:text-right">
+            <Link href="#" className="text-xs text-tertiary-gray hover:text-white">
+              Privacy policy
+            </Link>
+          </div>
+          */}
     </footer>
   );
 };
