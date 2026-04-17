@@ -12,6 +12,9 @@ import { websiteConfig } from '../website.config';
 export const metadata: Metadata = {
   title: websiteConfig.title,
   description: websiteConfig.description,
+  verification: {
+    google: 'SNTYQWBQrj5egt0wlpPvuroVwTbFCmYdLowNeDC4o5w',
+  },
 };
 
 export default function RootLayout({
