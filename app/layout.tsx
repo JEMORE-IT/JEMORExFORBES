@@ -26,8 +26,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={websiteConfig.font_variables.join(' ') + ' jemore-theme-light'}
+      suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
