@@ -8,6 +8,7 @@ import ScrollFadeIn from '../components/molecules/ScrollFadeIn';
 import CardSection from '../components/organisms/CardSection';
 import TicketSection from '../components/organisms/TicketSection';
 import VisualSection from '../components/organisms/VisualIdentity';
+import SpeakerSection from '../components/organisms/SpeakerSection';
 
 export const metadata: Metadata = {
   title: 'JournEy 2026',
@@ -22,8 +23,7 @@ export default function Home() {
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        {/* Target date di esempio: 20 Maggio 2026 */}
-        <Countdown targetDate="2026-05-20T09:00:00" />
+        <Countdown targetDate="2026-05-16T09:00:00" />
       </ScrollFadeIn>
 
       <ScrollFadeIn>
@@ -34,13 +34,11 @@ export default function Home() {
         <VisualSection />
       </ScrollFadeIn>
 
-      {
-        /*
-        <ScrollFadeIn>
+      
+        {/* <ScrollFadeIn>
           <SpeakerSection />
-        </ScrollFadeIn>
-        */
-      }
+        </ScrollFadeIn> */}
+     
 
       <ScrollFadeIn>
         <div className="flex min-h-[8vh] items-center justify-center px-4 md:min-h-[8vh]">
