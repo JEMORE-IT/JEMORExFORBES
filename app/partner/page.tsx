@@ -25,34 +25,25 @@ const sponsorTiers: SponsorTier[] = [
     title: 'TECHNICAL SPONSOR',
     color: 'var(--primary-yellow)',
     partners: [
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
+      { name: 'Learnn', logo: '/images/partners/logo_learnn.png' },
+      { name: 'coop', logo: '/images/partners/logo_coop.jpg' },
+      { name: 'Antimessico', logo: '/images/partners/logo_antimessico.jpg' },
     ],
   },
   {
     title: 'MEDIA SPONSOR',
     color: 'var(--secondary-pink)',
     partners: [
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
+      { name: 'Consorzio Nord', logo: '/images/partners/logo_edilnord.png' },
     ],
   },
   {
     title: 'BRONZE SPONSOR',
     color: 'var(--tertiary-blue)',
     partners: [
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
+      { name: 'Affittochiaro', logo: '/images/partners/logo_affittochiaro.jpg' },
     ],
-  },
-  {
-    title: 'PATROCINIO',
-    color: 'var(--tertiary-gray)',
-    partners: [
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
-      { name: 'Coming soon', logo: '/images/partners/placeholder.svg' },
-    ],
-  },
+  }
 ];
 
 export default function Partner() {
@@ -80,15 +71,17 @@ export default function Partner() {
                 const card = (
                   <div
                     key={i}
-                    className="flex h-36 w-44 flex-col items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/5 p-6 transition-transform hover:scale-105 md:h-40 md:w-52"
+                    className="flex h-44 w-56 flex-col items-center justify-center gap-4 rounded-xl border border-white/10 bg-white/5 p-6 transition-transform hover:scale-105 md:h-56 md:w-72"
                   >
-                    <div className="relative h-16 w-28">
-                      <Image
-                        src={partner.logo}
-                        alt={partner.name}
-                        fill
-                        className="object-contain"
-                      />
+                    <div className="flex h-20 w-36 items-center justify-center md:h-24 md:w-44">
+                      <div className="relative h-20 w-36 md:h-24 md:w-44">
+                        <Image
+                          src={partner.logo}
+                          alt={partner.name}
+                          fill
+                          className="object-contain object-center"
+                        />
+                      </div>
                     </div>
                     <span className="text-center text-xs font-medium tracking-wider text-white/70">
                       {partner.name.toUpperCase()}
