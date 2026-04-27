@@ -13,9 +13,10 @@ export const websiteConfig = {
   menuItems: [
     { text: 'Home', href: '/' },
     { text: 'Next Leaders', href: 'https://nextleaders.forbes.it/', external: true },
+    { text: 'Partner', href: '/partner' },
     { text: 'Programma', href: '/programma' },
     { text: 'Location', href: '/location' },
-    //{ text: 'Partner', href: '/partner' },
+
   ],
   title: 'Evento JournEy',
   description:
