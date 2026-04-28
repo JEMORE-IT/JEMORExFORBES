@@ -48,9 +48,11 @@ const sponsorTiers: SponsorTier[] = [
     title: 'PATRONCINI',
     color: 'var(--tertiary-gray)',
     partners: [
+      { name: 'Università di Modena e Reggio Emilia', logo: '/images/partners/logo_unimore.png' },
       { name: 'Confindustria Giovani', logo: '/images/partners/logo_confidustria.png' },
       { name: 'Confindustria Reggio Emilia', logo: '/images/partners/logo_confidreg.jpg' },
       { name: 'Provincia di Reggio Emilia', logo: '/images/partners/logo_reggio.jpg' },
+
     ],
   },
 ];
