@@ -43,7 +43,16 @@ const sponsorTiers: SponsorTier[] = [
     partners: [
       { name: 'Affittochiaro', logo: '/images/partners/logo_affittochiaro.jpg' },
     ],
-  }
+  },
+  {
+    title: 'PATRONCINI',
+    color: 'var(--tertiary-gray)',
+    partners: [
+      { name: 'Confindustria Giovani', logo: '/images/partners/logo_confidustria.png' },
+      { name: 'Confindustria Reggio Emilia', logo: '/images/partners/logo_confidreg.jpg' },
+      { name: 'Provincia di Reggio Emilia', logo: '/images/partners/logo_reggio.jpg' },
+    ],
+  },
 ];
 
 export default function Partner() {
