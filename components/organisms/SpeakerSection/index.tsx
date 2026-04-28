@@ -22,14 +22,14 @@ const mockSpeakers = [
       "Matteo Massaroli porterà un intervento tra innovazione, intelligenza artificiale e costruzione concreta, per raccontare come da intuizioni, errori e scelte quotidiane possano nascere nuove opportunità.",
     color: 'var(--secondary-pink)',
   },
-  {
+  /* {
     id: 3,
     name: 'Arianna Primavera',
     tagline: "Quanto può crescere un'idea vissuta davvero?",
     description:
       "Arianna Primavera porterà la sua esperienza tra università e imprenditoria, raccontando come una passione per l'organizzazione, la motivazione e la crescita personale si sia trasformata in un brand riconoscibile e in una community capace di coinvolgere migliaia di persone.",
     color: 'var(--tertiary-blue)',
-  },
+  }, */
 ];
 
 const SpeakerSection: React.FC<SpeakerSectionProps> = () => {
