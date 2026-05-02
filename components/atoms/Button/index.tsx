@@ -7,9 +7,7 @@ const ButtonTicket: FC<ButtonProps> = ({ href, fill, shadow, textColor }) => {
     <a
       target="_blank"
       href={href}
-      data-gomry-action="checkout"
-      data-gomry-event-id="JournEy-O4egFY4BQVpPNL6W1QGh"
-      className="gomry-checkout--button group relative inline-flex items-center justify-center px-4 py-2 text-sm font-bold uppercase tracking-wide transition-all duration-300 hover:-translate-y-1 hover:scale-110"
+      className="group relative inline-flex items-center justify-center px-4 py-2 text-sm font-bold uppercase tracking-wide transition-all duration-300 hover:-translate-y-1 hover:scale-110"
     >
       {/* Solid offset shadow */}
       <span

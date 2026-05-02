@@ -42,11 +42,6 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
-        <Script
-          id="gomry-checkout"
-          src="https://gomry.com/gomry-embed.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
