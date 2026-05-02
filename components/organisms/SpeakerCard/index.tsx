@@ -1,4 +1,5 @@
 import { UserRound } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react';
 
 import { SpeakerCardProps } from './index.types';
@@ -8,6 +9,8 @@ export const SpeakerCard: React.FC<SpeakerCardProps> = ({
   tagline,
   description,
   color,
+  image,
+  imageClassName,
 }) => {
   return (
     <div
@@ -15,13 +18,17 @@ export const SpeakerCard: React.FC<SpeakerCardProps> = ({
       style={{ border: `1px solid ${color}40` }}
     >
       <div
-        className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full"
+        className="relative flex h-40 w-40 lg:h-44 lg:w-44 flex-shrink-0 overflow-hidden items-center justify-center rounded-full"
         style={{ backgroundColor: `${color}20` }}
       >
-        <UserRound
-          style={{ color: color, width: '40px', height: '40px' }}
-          strokeWidth={1.5}
-        />
+        {image ? (
+          <Image src={image} alt={name} fill className={`object-cover ${imageClassName || ''}`} />
+        ) : (
+          <UserRound
+            style={{ color: color, width: '40px', height: '40px' }}
+            strokeWidth={1.5}
+          />
+        )}
       </div>
       <div className="flex flex-col text-center lg:text-left">
         <div

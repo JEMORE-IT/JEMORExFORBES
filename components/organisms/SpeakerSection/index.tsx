@@ -13,6 +13,8 @@ const mockSpeakers = [
     description:
       "Luca Bellei racconterà il suo percorso nel mondo della comunicazione digitale: dalla nascita di iPork alla costruzione di un progetto capace di raggiungere milioni di utenti.",
     color: 'var(--primary-yellow)',
+    image: '/images/luca-bellei.png',
+    imageClassName: 'scale-[1.8] object-top translate-y-10',
   },
   {
     id: 2,
@@ -21,6 +23,8 @@ const mockSpeakers = [
     description:
       "Matteo Massaroli porterà un intervento tra innovazione, intelligenza artificiale e costruzione concreta, per raccontare come da intuizioni, errori e scelte quotidiane possano nascere nuove opportunità.",
     color: 'var(--secondary-pink)',
+    image: '/images/matteo.jpg',
+    imageClassName: 'scale-[1.1]',
   },
   /* {
     id: 3,
@@ -54,6 +58,8 @@ const SpeakerSection: React.FC<SpeakerSectionProps> = () => {
                 tagline={speaker.tagline}
                 description={speaker.description}
                 color={speaker.color}
+                image={speaker.image}
+                imageClassName={speaker.imageClassName}
               />
             </div>
           ))}
@@ -69,6 +75,8 @@ const SpeakerSection: React.FC<SpeakerSectionProps> = () => {
                   tagline={speaker.tagline}
                   description={speaker.description}
                   color={speaker.color}
+                  image={speaker.image}
+                  imageClassName={speaker.imageClassName}
                 />
               ))}
             </div>
