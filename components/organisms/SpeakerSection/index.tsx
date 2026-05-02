@@ -34,7 +34,7 @@ const mockSpeakers = [
       "Arianna Primavera porterà la sua esperienza tra università e imprenditoria, raccontando come una passione per l'organizzazione, la motivazione e la crescita personale si sia trasformata in un brand riconoscibile e in una community capace di coinvolgere migliaia di persone.",
     color: 'var(--tertiary-blue)',
     image: '/images/arianna.jpg',
-    imageClassName: 'scale-[1.4] object-top -translate-y-9',
+    imageClassName: 'scale-[1.5] object-top -translate-y-8',
   },
 ];
 
