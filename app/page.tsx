@@ -6,9 +6,9 @@ import Hero from '../components/molecules/Hero';
 import ScrollExpandIn from '../components/molecules/ScrollExpandIn';
 import ScrollFadeIn from '../components/molecules/ScrollFadeIn';
 import CardSection from '../components/organisms/CardSection';
+import SpeakerSection from '../components/organisms/SpeakerSection';
 import TicketSection from '../components/organisms/TicketSection';
 import VisualSection from '../components/organisms/VisualIdentity';
-import SpeakerSection from '../components/organisms/SpeakerSection';
 
 export const metadata: Metadata = {
   title: 'JournEy 2026',

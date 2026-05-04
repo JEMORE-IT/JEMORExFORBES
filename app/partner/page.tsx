@@ -38,6 +38,13 @@ const sponsorTiers: SponsorTier[] = [
     ],
   },
   {
+    title: 'SILVER SPONSOR',
+    color: '#e2e8f0',
+    partners: [
+      { name: 'SGB Innovation', logo: '/images/partners/logo_sgb_innovation.jpg' },
+    ],
+  },
+  {
     title: 'BRONZE SPONSOR',
     color: 'var(--tertiary-blue)',
     partners: [
@@ -52,7 +59,7 @@ const sponsorTiers: SponsorTier[] = [
       { name: 'Confindustria Giovani', logo: '/images/partners/logo_confidustria.png' },
       { name: 'Confindustria Reggio Emilia', logo: '/images/partners/logo_confidreg.jpg' },
       { name: 'Provincia di Reggio Emilia', logo: '/images/partners/logo_reggio.jpg' },
-
+      { name: 'Comune di Reggio Emilia', logo: '/images/partners/logo_comune_reggio.jpg' },
     ],
   },
 ];
