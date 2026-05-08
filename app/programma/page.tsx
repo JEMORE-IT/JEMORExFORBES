@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 const mockEvents = [
   {
     time: '08:30',
-    title: 'Accoglienza',
-    description: 'Accoglienza e Check-in.',
+    title: 'Accoglienza/Coffee',
+    description: 'Accoglienza, Check-in e coffee.',
     color: 'var(--secondary-pink)',
   },
   {
@@ -22,22 +22,8 @@ const mockEvents = [
   },
   {
     time: '10:30',
-    title: 'Prima parte Speech',
-    description: 'Interventi e presentazioni della prima sessione di speech.',
-    color: 'var(--primary-yellow)',
-  },
-  {
-    time: '11:00',
-    title: 'Coffee Break',
-    description:
-      'Pausa caffè per ricaricare le energie e fare networking informale.',
-    color: 'var(--tertiary-gray)',
-  },
-  {
-    time: '11:15',
-    title: 'Seconda parte Speech e Tavola Rotonda',
-    description:
-      'Proseguimento degli interventi e momento di confronto con i partecipanti.',
+    title: 'Speech e Tavola Rotonda',
+    description: 'Presentazioni dei speech e un momento di confronto con i partecipanti.',
     color: 'var(--primary-yellow)',
   },
   {

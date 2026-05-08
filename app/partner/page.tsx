@@ -42,6 +42,7 @@ const sponsorTiers: SponsorTier[] = [
     color: '#e2e8f0',
     partners: [
       { name: 'SGB Innovation', logo: '/images/partners/logo_sgb_innovation.jpg' },
+      { name: 'Blinks', logo: '/images/partners/logo_blinks.jpg' },
     ],
   },
   {
