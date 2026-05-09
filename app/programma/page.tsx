@@ -23,7 +23,8 @@ const mockEvents = [
   {
     time: '10:30',
     title: 'Speech e Tavola Rotonda',
-    description: 'Presentazioni dei speech e un momento di confronto con i partecipanti.',
+    description:
+      'Presentazioni dei speech e un momento di confronto con i partecipanti.',
     color: 'var(--primary-yellow)',
   },
   {
@@ -35,7 +36,7 @@ const mockEvents = [
   {
     time: '15:00',
     title: 'Primo turno Attività',
-    description: 'Business Game, Masterclass e Company Fair.',
+    description: 'Masterclass e Company Fair.',
     color: 'var(--tertiary-blue)',
   },
   {
@@ -47,7 +48,7 @@ const mockEvents = [
   {
     time: '16:45',
     title: 'Secondo turno Attività',
-    description: 'Business Game, Masterclass e Company Fair.',
+    description: 'Masterclass e Company Fair.',
     color: 'var(--tertiary-blue)',
   },
   {
