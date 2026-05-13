@@ -28,6 +28,8 @@ const sponsorTiers: SponsorTier[] = [
       { name: 'Learnn', logo: '/images/partners/logo_learnn.png' },
       { name: 'coop', logo: '/images/partners/logo_coop.jpg' },
       { name: 'Antimessico', logo: '/images/partners/logo_antimessico.jpg' },
+      { name: 'School Card', logo: '/images/partners/logo_schoolcard.jpg' },
+
     ],
   },
   {
