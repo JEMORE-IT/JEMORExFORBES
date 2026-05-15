@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const mockEvents = [
   {
-    time: '08:30',
+    time: '09:00',
     title: 'Accoglienza/Coffee',
     description: 'Accoglienza, Check-in e coffee.',
     color: 'var(--secondary-pink)',
